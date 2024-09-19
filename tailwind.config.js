@@ -7,10 +7,19 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        rufina: ['var(--font-rufina)'],
+        playfair: ['var(--font-playfair)'],
+        raleway: ['var(--font-raleway)'],
+       
       },
+      colors : {
+        primary1 : '#5B656F',
+        primary2 : '#8998A6',
+        lightbrown : '#AB9C85',
+        pink : '#F5E9D6',
+        lightblue : '#DFE3E7',
+      }
     },
   },
   plugins: [],
