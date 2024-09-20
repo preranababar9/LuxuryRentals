@@ -2,6 +2,8 @@ import { Rufina, Playfair_Display, Raleway} from 'next/font/google'
 import "./globals.css";
 import Header from "@/components/common/Header";
 
+
+
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
 //   variable: "--font-geist-sans",
@@ -47,8 +49,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${rufina.variable}  ${playfair.variable} ${raleway.variable} antialiased`}
       >
+        <>
         <Header/>
         {children}
+        </>
       </body>
     </html>
   );
