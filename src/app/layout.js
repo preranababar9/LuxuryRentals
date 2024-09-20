@@ -7,6 +7,7 @@ import Region from '@/components/Region';
 import Speciality from '@/components/Speciality';
 import Host from '@/components/Host';
 import About from '@/components/About';
+import Scene from '@/components/Scene';
 
 
 
@@ -64,6 +65,7 @@ export default function RootLayout({ children }) {
        
         <Host/>
         <About/>
+        <Scene/>
         {children}
         </>
       </body>
