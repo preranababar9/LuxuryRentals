@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Region = () => {
   return (
-        <section className="py-20 bg-lightbrown">
+        <section className="py-20 bg-lightbrown rounded-b-*">
                  <div className="max-width">
                       <div>
                       <div className="font-rufina text-center ">

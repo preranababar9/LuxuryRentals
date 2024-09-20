@@ -4,6 +4,7 @@ import Header from "@/components/common/Header";
 import Hero from '@/components/Hero';
 import Villas from '@/components/Villas';
 import Region from '@/components/Region';
+import Speciality from '@/components/Speciality';
 
 
 
@@ -57,6 +58,7 @@ export default function RootLayout({ children }) {
         <Hero/>
         <Villas/>
         <Region/>
+        <Speciality/>
         {children}
         </>
       </body>

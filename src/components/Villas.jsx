@@ -59,7 +59,7 @@ const Villas = () => {
               <Image
                 src="/images/villa1.svg"
                 alt="Hero image"
-                className="w-full rounded-lg "
+                className="w-full rounded-lg object-cover "
                 width={10}
                 height={10}
               />
@@ -131,7 +131,7 @@ const Villas = () => {
               <Image
                 src="/images/villa1.svg"
                 alt="Hero image"
-                className="w-full rounded-lg "
+                className="w-full rounded-lg object-cover "
                 width={10}
                 height={10}
               />
@@ -203,7 +203,7 @@ const Villas = () => {
               <Image
                 src="/images/villa1.svg"
                 alt="Hero image"
-                className="w-full rounded-lg mb-0"
+                className="w-full rounded-lg object-cover mb-0"
                 width={10}
                 height={0}
               />
@@ -277,7 +277,7 @@ const Villas = () => {
               <Image
                 src="/images/villa1.svg"
                 alt="Hero image"
-                className="w-full rounded-lg mb-0"
+                className="w-full rounded-lg object-cover mb-0"
                 width={10}
                 height={0}
               />
