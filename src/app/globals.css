@@ -4,7 +4,7 @@
 
 @layer components{
   .max-width {
-   @apply max-w-[1440px] lg:px-16 md:px-10 px-4
+    @apply max-w-[1440px] mx-auto lg:px-16 md:px-10 px-4
   }
 }
 

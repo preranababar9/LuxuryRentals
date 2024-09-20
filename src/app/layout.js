@@ -2,6 +2,7 @@ import { Rufina, Playfair_Display, Raleway} from 'next/font/google'
 import "./globals.css";
 import Header from "@/components/common/Header";
 import Hero from '@/components/Hero';
+import Villas from '@/components/Villas';
 
 
 
@@ -53,6 +54,7 @@ export default function RootLayout({ children }) {
         <>
         <Header/>
         <Hero/>
+        <Villas/>
         {children}
         </>
       </body>

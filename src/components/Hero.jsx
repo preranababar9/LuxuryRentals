@@ -14,7 +14,7 @@ const Hero = () => {
                    width={100}
                    height={100}
       />
-      <div className="absolute z-30 top-[30%] xl:left-[15%] lg:left-[10%] max-md:left-[5%] left-[10%]  max-width  max-md:top-[60%] lg:px-16 max-md:px-10 max-md:text-center">
+      <div className="absolute z-30 top-[30%]  xl:left-[15%] lg:left-[10%] max-md:left-[5%] left-[10%]  max-width  max-md:top-[60%] lg:px-16 max-md:px-10 max-md:text-center">
         <h1 className="xl:text-7xl lg:text-7xl max-md:text-3xl  font-rufina uppercase font-bold  text-center text-white  pb-5">
           be our guest
         </h1>
