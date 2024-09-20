@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Speciality = () => {
   return (
-        <section className="py-20 bg-gray-200">
-    <div className="max-width">
+        <section className="py-20  bg-gray-200">
+    <div className="max-width my-20">
     <div className="font-rufina text-center mb-14 ">
           <h2 className="text-center lg:text-5xl text-3xl  pb-5">
             Our Properties Specialities
