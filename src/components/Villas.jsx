@@ -4,12 +4,9 @@ import Image from "next/image";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
+import { Pagination } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
-
-// import required modules
-import { Navigation } from "swiper/modules";
+import "swiper/css/pagination";
 
 const Villas = () => {
   return (
@@ -31,17 +28,32 @@ const Villas = () => {
           {/* 1st div */}
 
           <Swiper
-            // install Swiper modules
-            modules={Navigation}
-            spaceBetween={50}
-            slidesPerView={3}
-            navigation
-            pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
+           spaceBetween={50}
+          
+           pagination={{
+             dynamicBullets: true,
+           }}
+           modules={[Pagination]}
+           onSlideChange={() => console.log("slide change")}
+           onSwiper={(swiper) => console.log(swiper)}
+            breakpoints={{
+              // when window width is >= 1024px (desktop)
+              1024: {
+                slidesPerView: 3,  // Show 3 slides on desktop
+              },
+              // when window width is >= 640px (tablet)
+              640: {
+                slidesPerView: 2,  // Show 2 slides on tablet
+              },
+              // when window width is < 640px (mobile)
+              0: {
+                slidesPerView: 1,  // Show 1 slide on mobile
+              },
+            }}
+            
+          
           >
-          <SwiperSlide className="rounded-lg w-1/3 bg-white ">
+          <SwiperSlide className="rounded-lg lg:w-1/3 bg-white ">
             {/* image div */}
             <div className=" ">
               <Image
