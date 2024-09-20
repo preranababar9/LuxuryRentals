@@ -20,7 +20,7 @@ const Header = () => {
   }, [toggle]);
 
   return (
-    <div className="flex justify-around h-10vh items-center bg-gradient-to-r from-blue-500 to-[#646464] py-3 top-0">
+    <div className="flex justify-around h-10vh absolute z-30 w-full items-center  bg-gradient-to-r from-blue-500 to-[#646464] py-3 top-0">
       <div>
         <p className="uppercase text-xl tracking-wide font-raleway text-[#D9D9D9]">
           {" "}
