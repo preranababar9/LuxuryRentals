@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/common/Header";
 import Hero from '@/components/Hero';
 import Villas from '@/components/Villas';
+import Region from '@/components/Region';
 
 
 
@@ -55,6 +56,7 @@ export default function RootLayout({ children }) {
         <Header/>
         <Hero/>
         <Villas/>
+        <Region/>
         {children}
         </>
       </body>
