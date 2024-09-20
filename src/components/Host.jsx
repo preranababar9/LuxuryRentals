@@ -5,13 +5,13 @@ const Host = () => {
   return (
 
     <div className="">
-<div className="h-full">
+<div className="h-[100vh]">
 <Image
                    src="/images/host.svg"
                    alt="Hero image"
                    className="object-cover w-full h-full "
-                   width={100}
-                   height={100}
+                   width={1}
+                   height={1}
       />
 </div>
     </div>

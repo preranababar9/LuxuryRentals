@@ -22,7 +22,7 @@ const Region = () => {
         <Image
                 src="/images/region1.svg"
                 alt="Hero image"
-                className="w-1/3 max-md:w-3/4"
+                className="w-1/3 max-md:w-3/4 object-cover"
                 width={10}
                 height={10}
               />
@@ -31,7 +31,7 @@ const Region = () => {
 <Image
                 src="/images/region2.svg"
                 alt="Hero image"
-                className="w-1/3  max-md:w-3/4"
+                className="w-1/3  max-md:w-3/4 object-cover"
                 width={10}
                 height={10}
               />
