@@ -12,7 +12,7 @@ const Speciality = () => {
           </div>
 
 
-          <div className="flex justify-evenly gap-10 max-md:flex-col items-center ">
+          <div className="flex justify-evenly gap-10 max-lg:flex-col items-center ">
                 <div className="flex flex-col items-start  font-rufina">
                 <Image
                 src="/icons/s1.svg"

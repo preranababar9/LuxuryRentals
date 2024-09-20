@@ -5,7 +5,7 @@ const Host = () => {
   return (
 
     <div className="">
-<div>
+<div className="h-full">
 <Image
                    src="/images/host.svg"
                    alt="Hero image"
