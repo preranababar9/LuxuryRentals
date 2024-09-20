@@ -8,6 +8,7 @@ import Speciality from '@/components/Speciality';
 import Host from '@/components/Host';
 import About from '@/components/About';
 import Scene from '@/components/Scene';
+import Footer from '@/components/common/Footer';
 
 
 
@@ -66,6 +67,7 @@ export default function RootLayout({ children }) {
         <Host/>
         <About/>
         <Scene/>
+        <Footer/>
         {children}
         </>
       </body>
