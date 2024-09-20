@@ -6,6 +6,7 @@ import Villas from '@/components/Villas';
 import Region from '@/components/Region';
 import Speciality from '@/components/Speciality';
 import Host from '@/components/Host';
+import About from '@/components/About';
 
 
 
@@ -60,7 +61,9 @@ export default function RootLayout({ children }) {
         <Villas/>
         <Region/>
         <Speciality/>
+       
         <Host/>
+        <About/>
         {children}
         </>
       </body>
