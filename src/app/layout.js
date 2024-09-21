@@ -1,17 +1,8 @@
-import { Rufina, Playfair_Display, Raleway} from 'next/font/google'
+import { Rufina, Playfair_Display, Raleway } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/common/Header";
 
-import Footer from '@/components/common/Footer';
-import Hero from '@/components/home/Hero';
-import Villas from '@/components/home/Villas';
-import Region from '@/components/home/Region';
-import Speciality from '@/components/home/Speciality';
-import Host from '@/components/home/Host';
-import About from '@/components/home/About';
-import Scene from '@/components/home/Scene';
-
-
+import Footer from "@/components/common/Footer";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -25,27 +16,26 @@ import Scene from '@/components/home/Scene';
 // });
 
 const rufina = Rufina({
-  weight: ['400', '700'],
-  style: ['normal'],
-  subsets: ['latin'],
-  display : 'swap',
-  variable: '--font-rufina',
- 
-})
+  weight: ["400", "700"],
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-rufina",
+});
 
 const playfair = Playfair_Display({
-  weight: ['400'],
-  subsets: ['latin'],
-  display : 'swap',
-  variable: '--font-platfair',
-})
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-platfair",
+});
 
 const raleway = Raleway({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-  display : 'swap',
-  variable: '--font-raleway',
-})
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-raleway",
+});
 
 export const metadata = {
   title: "Luxury Rental ",
@@ -59,18 +49,12 @@ export default function RootLayout({ children }) {
         className={`${rufina.variable}  ${playfair.variable} ${raleway.variable} antialiased`}
       >
         <>
-        <Header/>
+          <Header />
 
-        <Hero/>
-        <Villas/>
-        <Region/>
-        <Speciality/>
-        <Host/>
-        <About/>
-        <Scene/>
-     
-        <Footer/>
-        {children}
+
+       
+          {children}
+          <Footer />
         </>
       </body>
     </html>
