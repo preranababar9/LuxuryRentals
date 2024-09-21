@@ -56,9 +56,9 @@ const Header = () => {
       {open && (
         <div className="lg:hidden top-0 absolute left-0 px-16 pt-32  h-[100vh] bg-gradient-to-r from-blue-500 to-[#646464] w-full z-10 flex flex-col ">
           <ul className="flex flex-col gap-5 items-center tracking-wide">
-            <li className="text-2xl text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">
+            <Link href="/allvillas" className="text-2xl text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">
               Villas
-            </li>
+            </Link>
            <Link href="/aboutus" className="text-2xl text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">  
               About Us
             </Link>
@@ -71,9 +71,9 @@ const Header = () => {
 
       <div className="max-md:hidden">
         <ul className="flex gap-10 tracking-wide">
-          <li className="text-lg text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">
+        <Link href="/allvillas" className="text-lg text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">
             Villas
-          </li>
+          </Link>
           <Link href="/aboutus" className="text-lg text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">  
             About Us
          </Link>

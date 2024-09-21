@@ -23,7 +23,7 @@ const Hero = () => {
         </p>
 
 
-        <div className="bg-white max-md:hidden flex justify-around lg:gap-10 gap-4 py-3 lg:px-10 px-2 shadow-xl rounded-lg w-full">
+        <div className="bg-white max-md:hidden flex justify-around lg:gap-10 gap-4 py-3 lg:px-10 px-2 rounded-lg  shadow-2xl shadow-black w-full">
 
                 <div className="flex gap-8 items-center " >
                         <p className="lg:text-lg text-md font-bold font-raleway">Italy</p>
