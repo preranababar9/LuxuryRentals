@@ -5,6 +5,7 @@ import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
 import { useEffect } from "react";
+import Link from "next/link";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -22,10 +23,10 @@ const Header = () => {
   return (
     <div className="flex justify-around h-10vh absolute z-30 w-full items-center  bg-gradient-to-r from-blue-500 to-[#646464] py-5 top-0">
       <div>
-        <p className="uppercase text-xl tracking-wide font-raleway text-[#D9D9D9]">
+        <Link href="/" className="uppercase text-xl tracking-wide font-raleway text-[#D9D9D9]">
           {" "}
           Luxury Rentals
-        </p>
+        </Link>
       </div>
 
       <div className="flex z-30 ">
@@ -58,9 +59,9 @@ const Header = () => {
             <li className="text-2xl text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">
               Villas
             </li>
-            <li className="text-2xl text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">
+           <Link href="/aboutus" className="text-2xl text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">  
               About Us
-            </li>
+            </Link>
             <li className="text-2xl text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">
               Contact
             </li>
@@ -73,9 +74,9 @@ const Header = () => {
           <li className="text-lg text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">
             Villas
           </li>
-          <li className="text-lg text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">
+          <Link href="/aboutus" className="text-lg text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">  
             About Us
-          </li>
+         </Link>
           <li className="text-lg text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">
             Contact
           </li>
