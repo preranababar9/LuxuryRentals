@@ -9,6 +9,7 @@ const About = () => {
     <h2 className="lg:text-5xl text-center text-3xl font-rufina  uppercase pb-8">
             About Us
           </h2>
+          
         <div className="flex max-md:flex-col-reverse items-center  gap-x-20 gap-y-10 ">
        
         <div className="font-rufina lg:w-1/2  ">
@@ -26,11 +27,11 @@ const About = () => {
         </div>
 
 
-        <div className="h-full lg:w-1/2">
+        <div className="h-full lg:w-1/2 max-md:w-3/4">
         <Image
               src="/images/aboutus.svg"
               alt="Hero image"
-              className="w-3/4 h-1/2 max-md:w-full  object-cover"
+              className="w-4/5 h-1/2 max-md:w-full  object-cover"
               width={10}
               height={10}
             />
