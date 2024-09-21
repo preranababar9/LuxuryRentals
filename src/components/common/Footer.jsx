@@ -8,7 +8,7 @@ const Footer = () => {
 
 
         
-      <div className="flex  absolute  gap-10 justify-center">
+      <div className="flex  absolute -top-full gap-10 justify-center">
           <div className="bg-[#181D24] rounded-lg  w-1/3 py-10 px-5">
             <h4 className=" font-bold text-center text-white font-rufina text-5xl pb-5 ">
               Lets Connect
@@ -82,14 +82,13 @@ const Footer = () => {
             <h4 className="uppercase text-2xl pb-5 ">luxury rentals</h4>
             <p className="text-md pb-16 text-primary1">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Necessitatibus pariatur inventore nulla velit nam? Minima, optio
-              modi non eligendi illo impedit eos rem iure eaque similique dolore
-              accusantium ducimus maxime.
+              Necessitatibus pariatur inventore.
+              
             </p>
           </div>
 
-          <div>
-            <h4 className="uppercase font-bold text-xl pb-5 ">
+          <div className=" max-md:mb-8 ">
+            <h4 className="uppercase font-bold text-xl lg:pb-5 pb-2">
               Connect with Us
             </h4>
             <p className="pb-2">+00000000000</p>
@@ -97,14 +96,14 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex max-md:flex-col  justify-between">
-          <div className="flex lg:gap-5  text-primary1">
+        <div className="flex max-md:flex-col gap-y-2  justify-between">
+          <div className="flex lg:gap-5 flex-wrap gap-3 mb-1 justify-center text-primary1">
             <p>Terms & Conditions</p>
             <p>Privacy Policy</p>
             <p>Cookies</p>
           </div>
 
-          <div className="flex gap-2 text-primary1">
+          <div className="flex gap-2 justify-center text-primary1">
             <p>Luxury Rentals.</p>
             <p> All rights reserved.</p>
           </div>
