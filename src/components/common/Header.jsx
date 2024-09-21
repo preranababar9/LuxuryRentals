@@ -62,9 +62,9 @@ const Header = () => {
            <Link href="/aboutus" className="text-2xl text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">  
               About Us
             </Link>
-            <li className="text-2xl text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">
+            <Link href="/contact" className="text-2xl text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">
               Contact
-            </li>
+            </Link>
           </ul>
         </div>
       )}
@@ -77,9 +77,9 @@ const Header = () => {
           <Link href="/aboutus" className="text-lg text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">  
             About Us
          </Link>
-          <li className="text-lg text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">
+          <Link href="/contact" className="text-lg text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">
             Contact
-          </li>
+          </Link>
         </ul>
       </div>
     </div>
