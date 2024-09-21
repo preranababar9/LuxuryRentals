@@ -1,14 +1,15 @@
 import { Rufina, Playfair_Display, Raleway} from 'next/font/google'
 import "./globals.css";
 import Header from "@/components/common/Header";
-import Hero from '@/components/Hero';
-import Villas from '@/components/Villas';
-import Region from '@/components/Region';
-import Speciality from '@/components/Speciality';
-import Host from '@/components/Host';
-import About from '@/components/About';
-import Scene from '@/components/Scene';
+
 import Footer from '@/components/common/Footer';
+import Hero from '@/components/home/Hero';
+import Villas from '@/components/home/Villas';
+import Region from '@/components/home/Region';
+import Speciality from '@/components/home/Speciality';
+import Host from '@/components/home/Host';
+import About from '@/components/home/About';
+import Scene from '@/components/home/Scene';
 
 
 
@@ -59,14 +60,15 @@ export default function RootLayout({ children }) {
       >
         <>
         <Header/>
+
         <Hero/>
         <Villas/>
         <Region/>
         <Speciality/>
-       
         <Host/>
         <About/>
         <Scene/>
+     
         <Footer/>
         {children}
         </>
