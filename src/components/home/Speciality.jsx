@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Speciality = () => {
   return (
-    <section className="py-20  bg-gray-200">
+    <section className="py-20  bg-[#f4f3f1]">
       <div className="max-width my-20">
         <div className="font-rufina text-center mb-14 ">
           <h2 className="text-center lg:text-5xl text-3xl  pb-5">

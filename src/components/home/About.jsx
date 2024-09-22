@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-[#f4f3f1]">
     <div className="max-width">
         
     <h2 className="lg:text-5xl text-center text-3xl font-rufina  uppercase pb-8">
