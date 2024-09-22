@@ -13,7 +13,7 @@ const Hero = () => {
         width={100}
         height={100}
       />
-      <div className="absolute z-30 top-[30%]  xl:left-[22%] lg:left-[10%]  max-md:left-[25%] max-sm:left-[5%] left-[5%]  max-md:top-[60%]  max-md:text-center">
+      <div className="absolute z-30 top-[30%]  xl:left-[22%] lg:left-[10%]  max-md:left-[25%] max-sm:left-[10%] left-[5%]  max-md:top-[60%]  max-md:text-center">
         <h1 className="xl:text-7xl lg:text-7xl max-md:text-5xl text-6xl max-sm:text-3xl font-rufina uppercase font-bold  text-center text-white  pb-5">
           be our guest
         </h1>
