@@ -32,10 +32,13 @@ const Question = () => {
         title: "What is the package version",
         content: "v1.0.5"
       }]
-  }
+  };
+ 
+
+
 
   return (
-        <section className="py-20 bg-white">
+        <section className="py-20  bg-white">
     <div className="max-width">
         <div>
         <div className="font-rufina text-center ">
