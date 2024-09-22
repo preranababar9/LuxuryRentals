@@ -23,7 +23,10 @@ const Header = () => {
   return (
     <div className="flex justify-around h-10vh absolute z-30 w-full items-center  bg-gradient-to-r from-blue-500 to-[#646464] py-5 top-0">
       <div>
-        <Link href="/" className="uppercase text-xl tracking-wide font-raleway text-[#D9D9D9]">
+        <Link
+          href="/"
+          className="uppercase text-xl tracking-wide font-raleway text-[#D9D9D9]"
+        >
           {" "}
           Luxury Rentals
         </Link>
@@ -55,35 +58,57 @@ const Header = () => {
 
       {open && (
         <div className="lg:hidden top-0 absolute left-0 px-16 pt-32  h-[100vh] bg-gradient-to-r from-blue-500 to-[#646464] w-full z-10 flex flex-col ">
-          <ul className="flex flex-col gap-5 items-center tracking-wide">
-            <Link onClick={() => {setToggle(true)}} href="/allvillas" className="text-2xl text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">
-              Villas
-            </Link>
-           <Link href="/aboutus" className="text-2xl text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">  
-              About Us
-            </Link>
-            <Link href="/contact" className="text-2xl text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">
-              Contact
-            </Link>
-          </ul>
+          {nav.map((item, index) => (
+            <ul
+              key={index}
+              className="flex flex-col  items-center tracking-wide"
+            >
+              <Link
+                onClick={() => {
+                  setOpen(false);
+                  setToggle(false);
+                }}
+                href={item.href}
+                className="text-2xl text-[#D9D9D9] font-raleway pb-5 hover:scale-110 hover:text-white"
+              >
+                {item.title}
+              </Link>
+            </ul>
+          ))}
         </div>
       )}
 
-      <div className="max-md:hidden">
-        <ul className="flex gap-10 tracking-wide">
-        <Link href="/allvillas" className="text-lg text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">
-            Villas
-          </Link>
-          <Link href="/aboutus" className="text-lg text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">  
-            About Us
-         </Link>
-          <Link href="/contact" className="text-lg text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white">
-            Contact
-          </Link>
-        </ul>
+      <div className="max-md:hidden flex gap-10">
+        {nav.map((item, index) => (
+            <ul key={index} className=" tracking-wide">
+            <Link
+              href={item.href}
+              className="text-lg text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white"
+            >
+             {item.title}
+            </Link>
+          
+          </ul>
+        ))}
+      
       </div>
     </div>
   );
 };
 
 export default Header;
+
+const nav = [
+  {
+    href: "/allvillas",
+    title: "Villas",
+  },
+  {
+    href: "/aboutus",
+    title: "About Us",
+  },
+  {
+    href: "/contact",
+    title: "Contact",
+  },
+];
