@@ -9,7 +9,7 @@ const scene = () => {
         <Image
                            src="/images/footer.svg"
                            alt="Hero image"
-                           className="object-cover w-full h-full "
+                           className="object-cover w-full h-[100vh] "
                            width={1}
                            height={1}
               />
