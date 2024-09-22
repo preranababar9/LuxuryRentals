@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <section className="lg:py-20 max-md:pt-20 max-md:pb-10 ">
+    <section className="lg:py-20 max-md:pt-20 bg-[#dbdee3] max-md:pb-10 ">
       <div className="max-width ">
 
 
@@ -77,7 +77,7 @@ const Footer = () => {
 
 
 
-        <div className="flex justify-between relative max-md:flex-col font-rufina">
+        <div className="flex justify-between relative max-md:flex-col  font-rufina">
           <div className=" lg:w-1/2">
             <h4 className="uppercase text-2xl pb-5 ">luxury rentals</h4>
             <p className="text-md lg:pb-16 pb-5 text-primary1">

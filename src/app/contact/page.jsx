@@ -1,5 +1,7 @@
 import Contactus from '@/components/contact/Contactus'
-import Faq from '@/components/contact/Faq'
+import Question from '@/components/contact/Question'
+
+
 import React from 'react'
 
 const page = () => {
@@ -7,7 +9,7 @@ const page = () => {
 
     <div>
       <Contactus/>
-      <Faq/>
+    <Question/>
     </div>
   )
 }
