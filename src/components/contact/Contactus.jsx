@@ -19,23 +19,23 @@ const Contactus = () => {
             </p>
           </div>
 
-<div className="w-3/4 mx-auto ">
+<div className="lg:w-3/4 mx-auto ">
           <div className="flex max-md:flex-col justify-center w-full">
-            <div className="h-3/4 lg:w-1/2  max-md:w-full">
+            <div className=" w-1/2  max-md:w-full">
               <Image
                 src="/images/contact.svg"
                 alt="Hero image"
-                className="w-full h-full max-md:w-full  object-cover"
+                className="w-full    object-cover"
                 width={10}
                 height={10}
               />
             </div>
-            <div className="bg-[#f4f3f1] lg:w-1/2 h-full  py-10 px-5">
-              <h4 className=" font-bold text-center text-black font-rufina text-4xl pb-5 ">
+            <div className="bg-[#f4f3f1] lg:w-1/2 lg:h-full w-full py-10 lg:px-5">
+              <h4 className=" font-bold text-center text-black font-rufina lg:text-4xl text-3xl pb-5 ">
                  Connect with Us
               </h4>
 
-              <div className="flex justify-start px-12 gap-5 h-3/4 pb-3">
+              <div className="flex justify-start lg:px-12 px-5 gap-5  pb-3">
                 <p className="text-lg font-rufina font-bold text-black">
                   Phone
                 </p>
@@ -44,7 +44,7 @@ const Contactus = () => {
                 </p>
               </div>
 
-              <div className="flex justify-start px-12 gap-5 pb-3">
+              <div className="flex justify-start lg:px-12 px-5 gap-5 pb-3">
                 <p className="text-lg font-rufina font-bold text-black">
                   Email
                 </p>
@@ -53,7 +53,7 @@ const Contactus = () => {
                 </p>
               </div>
 
-              <div className="flex justify-start px-12 gap-5 pb-16">
+              <div className="flex justify-start lg:px-12 px-5 gap-5 pb-16">
                 <p className="text-lg font-rufina font-bold text-black">
                   Address
                 </p>
@@ -62,11 +62,11 @@ const Contactus = () => {
                 </p>
               </div>
 
-              <div className="flex justify-start pb-[6px] px-12 gap-5 ">
+              <div className="flex justify-start pb-[6px] lg:px-12 px-5 gap-5 ">
               <Image
                 src="/images/social.svg"
                 alt="Hero image"
-                className="w-1/2 h-1/2 max-md:w-full  object-cover"
+                className="w-1/2 h-1/2 max-md:w-1/2  object-cover"
                 width={10}
                 height={10}
               />
