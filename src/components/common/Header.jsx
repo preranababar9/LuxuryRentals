@@ -21,7 +21,7 @@ const Header = () => {
   }, [toggle]);
 
   return (
-    <div className="flex justify-around h-10vh absolute z-30 w-full items-center  bg-gradient-to-r from-[#476682] to-[#27466a] opacity-70 py-5 top-0">
+    <div className="flex justify-around h-10vh absolute z-30 w-full items-center  bg-gradient-to-r from-[#476682] to-[#27466a]  py-5 top-0">
       <div>
         <Link
           href="/"
