@@ -13,7 +13,7 @@ const Signin = () => {
           <Image
                 src="/images/signin.jpg"
                 alt="Hero image"
-                className="w-full h-[80vh]   object-cover"
+                className="w-full h-[80vh] rounded-br-3xl object-cover"
                 width={400}
                 height={400}
               
@@ -24,7 +24,7 @@ const Signin = () => {
             <h4 className="text-3xl font-bold pb-2">
               Create New Account
             </h4>
-            <p className="text-md text-offgrey pb-6">
+            <p className="text-md  pb-6">
               Please enter your details
             </p>
 
@@ -84,7 +84,7 @@ const Signin = () => {
              <p className="text-md text-center">
               You already have a account?{" "}
               <Link
-                href="/aboutus"
+                href="login"
                 className="font-bold underline underline-offset-4"
               >
                 Login here
