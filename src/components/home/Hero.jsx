@@ -5,7 +5,7 @@ import { IoIosSearch } from "react-icons/io";
 
 const Hero = () => {
   return (
-    <div className="h-[100vh] z-10 relative top-0">
+    <div className="h-[100vh] z-10 relative  top-0">
       <Image
         src="/images/Image2.jpg"
         alt="Hero image"
