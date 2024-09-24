@@ -15,8 +15,8 @@ const ProductCard = ({ item }) => {
         />
       </div>
 
-      <div className="px-10">
-        <div className="font-rufina ">
+      <div className="px-10 py-5">
+        <div className="font-rufina pb-4">
           <p className="pb-2 font-bold text-lg">
             {item.place}-{" "}
             <span className="font-normal text-md">{item.type}</span>
@@ -25,13 +25,13 @@ const ProductCard = ({ item }) => {
           <h3 className="text-3xl ">{item.name}</h3>
         </div>
 
-        <div className="flex flex-wrap gap-2 items-start  ">
+        <div className="flex flex-wrap gap-4 justify-between ">
           {item?.list?.map((item, index) => (
-            <div key={index} className="flex items-center mx-auto w-1/3 gap-5 ">
+            <div key={index} className="flex gap-3 items-center">
               <Image
                 src={item.icon}
                 alt="Hero image"
-                className="w-1/5 h-20"
+                className="lg:w-[30px] w-[25px] lg:h-10 max-md:h-8"
                 width={10}
                 height={10}
               />
