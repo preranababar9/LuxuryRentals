@@ -28,11 +28,12 @@ const About = () => {
 
 
         <div className="h-full lg:w-1/2 max-md:w-3/4">
-        <img
-              src="/images/aboutus.svg"
+        <Image
+              src="/images/aboutus.webp"
               alt="Hero image"
               className="w-4/5 h-1/2 max-md:w-full  object-cover"
-            
+            width={800}
+            height={900}
             />
         </div>
         </div>

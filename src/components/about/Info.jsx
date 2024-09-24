@@ -11,11 +11,12 @@ const Info = () => {
 
 
        <div className="h-full lg:w-1/2 max-md:w-3/4">
-       <img
-             src="/images/about2.svg"
+       <Image
+             src="/images/about2.webp"
              alt="Hero image"
              className="w-full h-1/2 max-md:w-full lg:w-full  object-cover"
-            
+             width={800}
+            height={900}
            />
        </div>
 
