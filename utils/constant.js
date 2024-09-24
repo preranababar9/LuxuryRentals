@@ -1,6 +1,6 @@
  export const facility = [
         {
-          img: "/images/villa1.svg",
+          img: "/images/villa1.webp",
           place: "Italy",
           type: "Mountains",
           name: "Villa Makarska",
@@ -36,7 +36,7 @@
           sub: "Guests",
         },
         {
-          img: "/images/villa1.svg",
+          img: "/images/villa1.webp",
           place: "Italy",
           type: "Mountains",
           name: "Villa Makarska",

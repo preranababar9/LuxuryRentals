@@ -7,11 +7,11 @@ const Hero = () => {
   return (
     <div className="h-[100vh] z-10 relative top-0">
       <Image
-        src="/images/hero.svg"
+        src="/images/Image.png"
         alt="Hero image"
         className="object-cover w-full h-full "
-      width={500}
-      height={500}
+      width={800}
+      height={800}
       />
       <div className="">
       <div className="absolute z-30 top-[30%] w-fit left-[50%] text-nowrap -translate-x-[50%]  max-md:top-[60%]  max-md:text-center">
