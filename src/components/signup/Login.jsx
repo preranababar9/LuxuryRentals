@@ -13,8 +13,8 @@ const Login = () => {
                 src="/images/login.jpg"
                 alt="Hero image"
                 className="w-full h-[80vh] rounded-br-3xl object-cover"
-                width={500}
-                height={400}
+                width={900}
+                height={800}
               />
             </div>
 

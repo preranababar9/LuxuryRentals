@@ -23,11 +23,11 @@ const Contactus = () => {
           <div className="flex max-md:flex-col justify-center w-full">
             <div className=" w-1/2  max-md:w-full">
               <Image
-                src="/images/contact.svg"
+                src="/images/contact.webp"
                 alt="Hero image"
                 className="w-full h-full   object-cover"
-                width={10}
-                height={10}
+                width={900}
+                height={800}
               />
             </div>
             <div className="bg-[#f4f3f1] lg:w-1/2 lg:h-full w-full py-10 lg:px-5">

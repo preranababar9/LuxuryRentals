@@ -11,11 +11,11 @@ const Signin = () => {
         <div className="flex  items-center">
           <div className="w-1/2  mr-36 max-md:hidden">
           <Image
-                src="/images/signin.jpg"
+                src="/images/signin.webp"
                 alt="Hero image"
                 className="w-full h-[80vh] rounded-br-3xl object-cover"
-                width={400}
-                height={400}
+                width={900}
+                height={800}
               
               />
           </div>
