@@ -23,325 +23,113 @@ const Villas = () => {
             ratione. Odit facilis dignissimos enim.
           </p>
         </div>
+
         {/* parent div */}
         <div className="flex gap-10 items-center ">
           {/* 1st div */}
+    
 
+  
           <Swiper
-           spaceBetween={50}
-          
-           pagination={{
-             dynamicBullets: true,
-           }}
-           modules={[Pagination]}
-           onSlideChange={() => console.log("slide change")}
-           onSwiper={(swiper) => console.log(swiper)}
+         
+            spaceBetween={50}
+            pagination={{
+              dynamicBullets: true,
+            }}
+            modules={[Pagination]}
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
             breakpoints={{
               // when window width is >= 1024px (desktop)
               1024: {
-                slidesPerView: 3,  // Show 3 slides on desktop
+                slidesPerView: 3, // Show 3 slides on desktop
               },
               // when window width is >= 640px (tablet)
               640: {
-                slidesPerView: 2,  // Show 2 slides on tablet
+                slidesPerView: 2, // Show 2 slides on tablet
               },
               // when window width is < 640px (mobile)
               0: {
-                slidesPerView: 1,  // Show 1 slide on mobile
+                slidesPerView: 1, // Show 1 slide on mobile
               },
             }}
-            
-          
           >
-          <SwiperSlide className="rounded-lg lg:w-1/3 bg-white ">
-            {/* image div */}
-            <div className=" ">
-              <Image
-                src="/images/villa1.svg"
-                alt="Hero image"
-                className="w-full rounded-lg object-cover "
-                width={10}
-                height={10}
-              />
+              {facility.map((item, index) => (
+            <SwiperSlide
+            key={index}
+             className="rounded-lg lg:w-1/3 bg-white ">
+              {/* image div */}
+              <div className=" ">
+                <img
+                  src={item.img}
+                  alt="Hero image"
+                  className="w-full rounded-lg object-cover "
+                
+                />
 
-              <div className="font-rufina px-10">
-                <p className="pb-2 font-bold text-lg">
-                  Italy - <span className="font-normal text-md">Mountains</span>
-                </p>
+                <div className="font-rufina px-10">
+                  <p className="pb-2 font-bold text-lg">
+                   {item.place}-{" "}
+                    <span className="font-normal text-md">{item.type}</span>
+                  </p>
 
-                <h3 className="text-3xl ">Villa Makarska</h3>
-              </div>
-
-              <div className="flex flex-wrap justify-evenly  ">
-                <div className="flex items-center gap-5 ">
-                  <Image
-                    src="/icons/guests.svg"
-                    alt="Hero image"
-                    className="w-1/5 h-20"
-                    width={10}
-                    height={10}
-                  />
-
-                  <p className="text-lg font-rufina">8 Guests</p>
+                  <h3 className="text-3xl ">{item.name}</h3>
                 </div>
 
-                <div className="flex items-center gap-5">
-                  <Image
-                    src="/icons/guests.svg"
-                    alt="Hero image"
-                    className="w-1/5 h-20"
-                    width={10}
-                    height={10}
-                  />
+                <div className="flex flex-wrap justify-evenly  ">
+                  <div className="flex items-center gap-5 ">
+                    <Image
+                      src={item.icon}
+                      alt="Hero image"
+                      className="w-1/5 h-20"
+                      width={10}
+                      height={10}
+                    />
 
-                  <p className="text-lg  font-rufina">8 Guests</p>
-                </div>
+                    <p className="text-lg font-rufina">{item.sub}</p>
+                  </div>
 
-                <div className="flex items-center gap-x-5">
-                  <Image
-                    src="/icons/guests.svg"
-                    alt="Hero image"
-                    className="w-1/5 h-20"
-                    width={10}
-                    height={10}
-                  />
+                  <div className="flex items-center gap-5">
+                    <Image
+                      src="/icons/guests.svg"
+                      alt="Hero image"
+                      className="w-1/5 h-20"
+                      width={10}
+                      height={10}
+                    />
 
-                  <p className="text-lg font-rufina">8 Guests</p>
-                </div>
+                    <p className="text-lg  font-rufina">8 Guests</p>
+                  </div>
 
-                <div className="flex items-center gap-5">
-                  <Image
-                    src="/icons/guests.svg"
-                    alt="Hero image"
-                    className="w-1/5 h-20"
-                    width={10}
-                    height={10}
-                  />
+                  <div className="flex items-center gap-x-5">
+                    <Image
+                      src="/icons/guests.svg"
+                      alt="Hero image"
+                      className="w-1/5 h-20"
+                      width={10}
+                      height={10}
+                    />
 
-                  <p className="text-lg  font-rufina">8 Guests</p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
+                    <p className="text-lg font-rufina">8 Guests</p>
+                  </div>
 
-          {/* 1st div */}
-          <SwiperSlide className="rounded-lg w-1/3 bg-white">
-            {/* image div */}
-            <div className=" ">
-              <Image
-                src="/images/villa1.svg"
-                alt="Hero image"
-                className="w-full rounded-lg object-cover "
-                width={10}
-                height={10}
-              />
+                  <div className="flex items-center gap-5">
+                    <Image
+                      src="/icons/guests.svg"
+                      alt="Hero image"
+                      className="w-1/5 h-20"
+                      width={10}
+                      height={10}
+                    />
 
-              <div className="font-rufina px-10">
-                <p className="pb-2 font-bold text-lg">
-                  Italy - <span className="font-normal text-md">Mountains</span>
-                </p>
-
-                <h3 className="text-3xl ">Villa Makarska</h3>
-              </div>
-
-              <div className="flex flex-wrap justify-evenly ">
-                <div className="flex items-center gap-5">
-                  <Image
-                    src="/icons/guests.svg"
-                    alt="Hero image"
-                    className="w-1/5 h-20"
-                    width={10}
-                    height={10}
-                  />
-
-                  <p className="text-lg font-rufina">8 Guests</p>
-                </div>
-
-                <div className="flex items-center gap-5">
-                  <Image
-                    src="/icons/guests.svg"
-                    alt="Hero image"
-                    className="w-1/5 h-20"
-                    width={10}
-                    height={10}
-                  />
-
-                  <p className="text-lg  font-rufina">8 Guests</p>
-                </div>
-
-                <div className="flex items-center gap-5">
-                  <Image
-                    src="/icons/guests.svg"
-                    alt="Hero image"
-                    className="w-1/5 h-20"
-                    width={10}
-                    height={10}
-                  />
-
-                  <p className="text-lg font-rufina">8 Guests</p>
-                </div>
-
-                <div className="flex items-center gap-5">
-                  <Image
-                    src="/icons/guests.svg"
-                    alt="Hero image"
-                    className="w-1/5 h-20"
-                    width={10}
-                    height={10}
-                  />
-
-                  <p className="text-lg  font-rufina">8 Guests</p>
+                    <p className="text-lg  font-rufina">8 Guests</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-
-          {/* 1st div */}
-          <SwiperSlide className="rounded-lg w-1/3 bg-white">
-            {/* image div */}
-            <div className=" ">
-              <Image
-                src="/images/villa1.svg"
-                alt="Hero image"
-                className="w-full rounded-lg object-cover mb-0"
-                width={10}
-                height={0}
-              />
-
-              <div className="font-rufina px-10">
-                <p className="pb-2 font-bold text-lg">
-                  Italy - <span className="font-normal text-md">Mountains</span>
-                </p>
-
-                <h3 className="text-3xl ">Villa Makarska</h3>
-              </div>
-
-              <div className="flex flex-wrap justify-evenly ">
-                <div className="flex items-center gap-5">
-                  <Image
-                    src="/icons/guests.svg"
-                    alt="Hero image"
-                    className="w-1/5 h-20"
-                    width={10}
-                    height={10}
-                  />
-
-                  <p className="text-lg font-rufina">8 Guests</p>
-                </div>
-
-                <div className="flex items-center gap-5">
-                  <Image
-                    src="/icons/guests.svg"
-                    alt="Hero image"
-                    className="w-1/5 h-20"
-                    width={10}
-                    height={10}
-                  />
-
-                  <p className="text-lg  font-rufina">8 Guests</p>
-                </div>
-
-                <div className="flex items-center gap-5">
-                  <Image
-                    src="/icons/guests.svg"
-                    alt="Hero image"
-                    className="w-1/5 h-20"
-                    width={10}
-                    height={10}
-                  />
-
-                  <p className="text-lg font-rufina">8 Guests</p>
-                </div>
-
-                <div className="flex items-center gap-5">
-                  <Image
-                    src="/icons/guests.svg"
-                    alt="Hero image"
-                    className="w-1/5 h-20"
-                    width={10}
-                    height={10}
-                  />
-
-                  <p className="text-lg  font-rufina">8 Guests</p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-
-
-
-           {/* 1st div */}
-           <SwiperSlide className="rounded-lg w-1/3 bg-white">
-            {/* image div */}
-            <div className=" ">
-              <Image
-                src="/images/villa1.svg"
-                alt="Hero image"
-                className="w-full rounded-lg object-cover mb-0"
-                width={10}
-                height={0}
-              />
-
-              <div className="font-rufina px-10">
-                <p className="pb-2 font-bold text-lg">
-                  Italy - <span className="font-normal text-md">Mountains</span>
-                </p>
-
-                <h3 className="text-3xl ">Villa Makarska</h3>
-              </div>
-
-              <div className="flex flex-wrap justify-evenly ">
-                <div className="flex items-center gap-5">
-                  <Image
-                    src="/icons/guests.svg"
-                    alt="Hero image"
-                    className="w-1/5 h-20"
-                    width={10}
-                    height={10}
-                  />
-
-                  <p className="text-lg font-rufina">8 Guests</p>
-                </div>
-
-                <div className="flex items-center gap-5">
-                  <Image
-                    src="/icons/guests.svg"
-                    alt="Hero image"
-                    className="w-1/5 h-20"
-                    width={10}
-                    height={10}
-                  />
-
-                  <p className="text-lg  font-rufina">8 Guests</p>
-                </div>
-
-                <div className="flex items-center gap-5">
-                  <Image
-                    src="/icons/guests.svg"
-                    alt="Hero image"
-                    className="w-1/5 h-20"
-                    width={10}
-                    height={10}
-                  />
-
-                  <p className="text-lg font-rufina">8 Guests</p>
-                </div>
-
-                <div className="flex items-center gap-5">
-                  <Image
-                    src="/icons/guests.svg"
-                    alt="Hero image"
-                    className="w-1/5 h-20"
-                    width={10}
-                    height={10}
-                  />
-
-                  <p className="text-lg  font-rufina">8 Guests</p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
+            </SwiperSlide>
+              ))}
           </Swiper>
+            
         </div>
       </div>
     </section>
@@ -349,3 +137,30 @@ const Villas = () => {
 };
 
 export default Villas;
+
+const facility = [
+  {
+    img: "/images/villa1.svg",
+    place: "Italy",
+    type: "Mountains",
+    name: "Villa Makarska",
+    icon: "/icons/guests.svg",
+    sub: "Guests",
+  },
+  {
+    img: "/images/villa1.svg",
+    place: "Italy",
+    type: "Mountains",
+    name: "Villa Makarska",
+    icon: "/icons/guests.svg",
+    sub: "Guests",
+  },
+  {
+    img: "/images/villa1.svg",
+    place: "Italy",
+    type: "Mountains",
+    name: "Villa Makarska",
+    icon: "/icons/guests.svg",
+    sub: "Guests",
+  },
+];
