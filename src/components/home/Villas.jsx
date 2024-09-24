@@ -27,11 +27,8 @@ const Villas = () => {
         {/* parent div */}
         <div className="flex gap-10 items-center ">
           {/* 1st div */}
-    
 
-  
           <Swiper
-         
             spaceBetween={50}
             pagination={{
               dynamicBullets: true,
@@ -54,82 +51,81 @@ const Villas = () => {
               },
             }}
           >
-              {facility.map((item, index) => (
-            <SwiperSlide
-            key={index}
-             className="rounded-lg lg:w-1/3 bg-white ">
-              {/* image div */}
-              <div className=" ">
-                <img
-                  src={item.img}
-                  alt="Hero image"
-                  className="w-full rounded-lg object-cover "
-                
-                />
+            {facility.map((item, index) => (
+              <SwiperSlide
+                key={index}
+                className="rounded-lg lg:w-1/3 bg-white "
+              >
+                {/* image div */}
+                <div className=" ">
+                  <img
+                    src={item.img}
+                    alt="Hero image"
+                    className="w-full rounded-lg object-cover "
+                  />
 
-                <div className="font-rufina px-10">
-                  <p className="pb-2 font-bold text-lg">
-                   {item.place}-{" "}
-                    <span className="font-normal text-md">{item.type}</span>
-                  </p>
+                  <div className="font-rufina px-10">
+                    <p className="pb-2 font-bold text-lg">
+                      {item.place}-{" "}
+                      <span className="font-normal text-md">{item.type}</span>
+                    </p>
 
-                  <h3 className="text-3xl ">{item.name}</h3>
+                    <h3 className="text-3xl ">{item.name}</h3>
+                  </div>
+
+                  <div className="flex flex-wrap justify-evenly  ">
+                    <div className="flex items-center gap-5 ">
+                      <Image
+                        src={item.icon}
+                        alt="Hero image"
+                        className="w-1/5 h-20"
+                        width={10}
+                        height={10}
+                      />
+
+                      <p className="text-lg font-rufina">{item.sub}</p>
+                    </div>
+
+                    <div className="flex items-center gap-5">
+                      <Image
+                        src="/icons/guests.svg"
+                        alt="Hero image"
+                        className="w-1/5 h-20"
+                        width={10}
+                        height={10}
+                      />
+
+                      <p className="text-lg  font-rufina">8 Guests</p>
+                    </div>
+
+                    <div className="flex items-center gap-x-5">
+                      <Image
+                        src="/icons/guests.svg"
+                        alt="Hero image"
+                        className="w-1/5 h-20"
+                        width={10}
+                        height={10}
+                      />
+
+                      <p className="text-lg font-rufina">8 Guests</p>
+                    </div>
+
+                    <div className="flex items-center gap-5">
+                      <Image
+                        src="/icons/guests.svg"
+                        alt="Hero image"
+                        className="w-1/5 h-20"
+                        width={10}
+                        height={10}
+                      />
+
+                      <p className="text-lg  font-rufina">8 Guests</p>
+                    </div>
+                  </div>
                 </div>
-
-                <div className="flex flex-wrap justify-evenly  ">
-                  <div className="flex items-center gap-5 ">
-                    <Image
-                      src={item.icon}
-                      alt="Hero image"
-                      className="w-1/5 h-20"
-                      width={10}
-                      height={10}
-                    />
-
-                    <p className="text-lg font-rufina">{item.sub}</p>
-                  </div>
-
-                  <div className="flex items-center gap-5">
-                    <Image
-                      src="/icons/guests.svg"
-                      alt="Hero image"
-                      className="w-1/5 h-20"
-                      width={10}
-                      height={10}
-                    />
-
-                    <p className="text-lg  font-rufina">8 Guests</p>
-                  </div>
-
-                  <div className="flex items-center gap-x-5">
-                    <Image
-                      src="/icons/guests.svg"
-                      alt="Hero image"
-                      className="w-1/5 h-20"
-                      width={10}
-                      height={10}
-                    />
-
-                    <p className="text-lg font-rufina">8 Guests</p>
-                  </div>
-
-                  <div className="flex items-center gap-5">
-                    <Image
-                      src="/icons/guests.svg"
-                      alt="Hero image"
-                      className="w-1/5 h-20"
-                      width={10}
-                      height={10}
-                    />
-
-                    <p className="text-lg  font-rufina">8 Guests</p>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-              ))}
+              </SwiperSlide>
+            ))}
           </Swiper>
-            
         </div>
       </div>
     </section>
@@ -148,7 +144,7 @@ const facility = [
     sub: "Guests",
   },
   {
-    img: "/images/villa1.svg",
+    img: "/images/villa2.svg",
     place: "Italy",
     type: "Mountains",
     name: "Villa Makarska",
