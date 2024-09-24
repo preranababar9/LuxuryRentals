@@ -58,10 +58,13 @@ const Villas = () => {
               >
                 {/* image div */}
                 <div className=" ">
-                  <img
+                  <Image
                     src={item.img}
                     alt="Hero image"
                     className="w-full rounded-lg object-cover "
+                    quality={100} 
+                    width={100}
+                    height={100}
                   />
 
                   <div className="font-rufina px-10">
