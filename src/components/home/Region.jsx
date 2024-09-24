@@ -19,11 +19,11 @@ const Region = () => {
 
           <div className="flex  gap-10 max-md:gap-5 max-lg:gap-5 justify-center items-center max-md:flex-col">
             <Image
-              src="/images/region1.svg"
+              src="/images/region1.webp"
               alt="Hero image"
               className="w-1/3 max-md:w-3/4 object-cover"
-              width={10}
-              height={10}
+              width={800}
+              height={900}
             />
 
             <Image
