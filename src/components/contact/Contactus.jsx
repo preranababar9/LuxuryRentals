@@ -19,13 +19,13 @@ const Contactus = () => {
             </p>
           </div>
 
-<div className="lg:w-3/4 mx-auto ">
+<div className="lg:w-3/4 mx-auto h-full ">
           <div className="flex max-md:flex-col justify-center w-full">
             <div className=" w-1/2  max-md:w-full">
               <Image
                 src="/images/contact.svg"
                 alt="Hero image"
-                className="w-full    object-cover"
+                className="w-full h-full   object-cover"
                 width={10}
                 height={10}
               />
