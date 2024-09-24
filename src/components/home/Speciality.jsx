@@ -12,9 +12,9 @@ const Speciality = () => {
           </h2>
         </div>
 
-        <div className="flex justify-evenly max-md:w-full gap-10 max-lg:flex-col items-center ">
+        <div className="flex lg:justify-evenly max-md:w-full gap-10 max-lg:flex-col items-center ">
           {special.map((item, index) => (
-            <div key={index} className="flex max-md:w-1/2 flex-col items-center justify-center  font-rufina">
+            <div key={index} className="flex max-md:w-1/2 lg:flex-col max-md:gap-3 items-center justify-center  font-rufina">
               <Image
                 src={item.icon}
                 alt="Hero image"
@@ -23,8 +23,10 @@ const Speciality = () => {
                 height={10}
               />
 
-              <h4 className="lg:text-3xl text-center text-2xl pt-8">{item.title}</h4>
-              <p className="text-xl pt-3 ">{item.msg}</p>
+<div>
+              <h4 className="lg:text-3xl text-center text-nowrap text-2xl pt-8">{item.title}</h4>
+              <p className="text-xl text-center pt-3 text-nowrap ">{item.msg}</p>
+              </div>
             </div>
           ))}
         </div>
