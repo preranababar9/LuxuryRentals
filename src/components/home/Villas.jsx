@@ -7,6 +7,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { facility } from "../../../utils/constant";
+import ProductCard from "../product/ProductCard";
 
 const Villas = () => {
   return (
@@ -56,76 +58,8 @@ const Villas = () => {
                 key={index}
                 className="rounded-lg lg:w-1/3 bg-white "
               >
-                {/* image div */}
-                <div className=" ">
-                  <Image
-                    src={item.img}
-                    alt="Hero image"
-                    className="w-full rounded-lg object-cover "
-                    quality={100} 
-                    width={500}
-                    height={500}
-                  />
-
-                  <div className="font-rufina px-10">
-                    <p className="pb-2 font-bold text-lg">
-                      {item.place}-{" "}
-                      <span className="font-normal text-md">{item.type}</span>
-                    </p>
-
-                    <h3 className="text-3xl ">{item.name}</h3>
-                  </div>
-
-                  <div className="flex flex-wrap justify-evenly  ">
-                    <div className="flex items-center gap-5 ">
-                      <Image
-                        src={item.icon}
-                        alt="Hero image"
-                        className="w-1/5 h-20"
-                        width={10}
-                        height={10}
-                      />
-
-                      <p className="text-lg font-rufina">{item.sub}</p>
-                    </div>
-
-                    <div className="flex items-center gap-5">
-                      <Image
-                        src="/icons/guests.svg"
-                        alt="Hero image"
-                        className="w-1/5 h-20"
-                        width={10}
-                        height={10}
-                      />
-
-                      <p className="text-lg  font-rufina">8 Guests</p>
-                    </div>
-
-                    <div className="flex items-center gap-x-5">
-                      <Image
-                        src="/icons/guests.svg"
-                        alt="Hero image"
-                        className="w-1/5 h-20"
-                        width={10}
-                        height={10}
-                      />
-
-                      <p className="text-lg font-rufina">8 Guests</p>
-                    </div>
-
-                    <div className="flex items-center gap-5">
-                      <Image
-                        src="/icons/guests.svg"
-                        alt="Hero image"
-                        className="w-1/5 h-20"
-                        width={10}
-                        height={10}
-                      />
-
-                      <p className="text-lg  font-rufina">8 Guests</p>
-                    </div>
-                  </div>
-                </div>
+               <ProductCard item={item}/>
+               
               </SwiperSlide>
             ))}
           </Swiper>
@@ -137,29 +71,4 @@ const Villas = () => {
 
 export default Villas;
 
-const facility = [
-  {
-    img: "/images/villa1.svg",
-    place: "Italy",
-    type: "Mountains",
-    name: "Villa Makarska",
-    icon: "/icons/guests.svg",
-    sub: "Guests",
-  },
-  {
-    img: "/images/villa2.svg",
-    place: "Italy",
-    type: "Mountains",
-    name: "Villa Makarska",
-    icon: "/icons/guests.svg",
-    sub: "Guests",
-  },
-  {
-    img: "/images/villa1.svg",
-    place: "Italy",
-    type: "Mountains",
-    name: "Villa Makarska",
-    icon: "/icons/guests.svg",
-    sub: "Guests",
-  },
-];
+
