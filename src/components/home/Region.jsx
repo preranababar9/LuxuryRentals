@@ -27,11 +27,11 @@ const Region = () => {
             />
 
             <Image
-              src="/images/region2.svg"
+              src="/images/region2.webp"
               alt="Hero image"
               className="w-1/3  max-md:w-3/4 object-cover"
-              width={10}
-              height={10}
+              width={800}
+              height={900}
             />
           </div>
         </div>
