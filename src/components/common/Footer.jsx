@@ -8,7 +8,7 @@ const Footer = () => {
 
 
         
-      <div className="flex  absolute -top-full gap-10 justify-center">
+      <div className="flex  absolute lg:hidden gap-10 justify-center">
           <div className="bg-[#181D24] rounded-lg  w-1/3 py-10 px-5">
             <h4 className=" font-bold text-center text-white font-rufina text-5xl pb-5 ">
               Lets Connect

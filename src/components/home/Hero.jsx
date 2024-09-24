@@ -7,10 +7,10 @@ const Hero = () => {
   return (
     <div className="h-[100vh] z-10 relative top-0">
       <Image
-        src="/images/Image.png"
+        src="/images/Image2.jpg"
         alt="Hero image"
         className="object-cover w-full h-full "
-      width={800}
+      width={1000}
       height={800}
       />
       <div className="">
