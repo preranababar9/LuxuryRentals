@@ -8,7 +8,7 @@ const ProductCard = ({ item }) => {
         <Image
           src={item.img}
           alt="Hero image"
-          className="w-full rounded-lg object-cover "
+          className="w-full h-[300px] rounded-lg object-cover "
           quality={100}
           width={500}
           height={500}
