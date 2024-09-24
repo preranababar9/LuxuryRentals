@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
+import Link from "next/link";
 
 const Host = () => {
   return (
@@ -21,7 +22,7 @@ const Host = () => {
 
         <p className="text-center lg:text-lg text-md pb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates cumque, ab enim amet beatae </p>
 
-        <button className="lg:text-xl text-lg uppercase lg:px-10  px-8 py-3 rounded-lg bg-primary1 text-white">join today</button>
+        <Link href="/signup" className="lg:text-xl text-lg uppercase lg:px-10  px-8 py-3 rounded-lg bg-primary1 text-white">join today</Link>
 </div>
 
 </div>
