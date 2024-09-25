@@ -1,8 +1,11 @@
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-  getAuth,
+ 
 } from "firebase/auth";
+import { getAuth } from "firebase/auth";
+import { db } from "../config/firebase";
+import { auth } from "../config/firebase";
 
 export const signInWithFirebase = async (email, password) => {
   try {
@@ -26,7 +29,7 @@ export const loginWithFirebase = async (email, password) => {
 
 export const addUser = async (data) => {
   try {
-    const response = await db.collection("user").doc(data.id).set(data);
+    const response = await db.collection("users").doc(data.id).set(data);
     return response;
   } catch (error) {
     console.log(error);

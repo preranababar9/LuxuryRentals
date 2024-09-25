@@ -18,11 +18,12 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
 
-const db = firebase.firestore();
-const storage = firebase.storage();
-const auth = firebase.auth();
+firebase.initializeApp(firebaseConfig);
+
+ export const db = firebase.firestore();
+ export const storage = firebase.storage();
+ export const auth = getAuth();
 
 
 
