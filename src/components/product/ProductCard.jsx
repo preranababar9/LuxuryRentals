@@ -19,7 +19,7 @@ const ProductCard = ({ item }) => {
    <p className="font-rufina text-black "> From <span className="font-bold">{item.price}/daily</span></p>
       </div>
 
-      <div className="px-10 py-5">
+      <div className="lg:px-10 px-8 py-5">
         <div className="font-rufina pb-4">
           <p className="pb-2 font-bold text-lg">
             {item.place}-{" "}
@@ -40,7 +40,7 @@ const ProductCard = ({ item }) => {
                 height={10}
               />
 
-              <p className="text-lg font-rufina">{item.sub}</p>
+              <p className="text-lg max-sm:text-md  font-rufina">{item.sub}</p>
             </div>
           ))}
         </div>
