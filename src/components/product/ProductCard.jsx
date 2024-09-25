@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const ProductCard = ({ item }) => {
   return (
-    <div>
-      <div className=" relative">
+    <div className="relative">
+      <div className=" ">
         <Image
           src={item.img}
           alt="Hero image"

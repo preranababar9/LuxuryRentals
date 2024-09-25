@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div>
       <VillaListing/>
-     <Villas/>
+    
      <Scene/>
     </div>
   )

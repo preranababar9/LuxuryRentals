@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { IoMdArrowDropdown } from "react-icons/io";
-import { IoIosSearch } from "react-icons/io";
+import Search from "../common/Search";
+
 
 const Hero = () => {
   return (
@@ -22,32 +22,12 @@ const Hero = () => {
           live like a king in our best houses
         </p>
         </div>
-        <div className="bg-white absolute z-30 top-[60%] w-fit left-[50%] -translate-x-[50%] max-md:hidden text-nowrap flex justify-around lg:gap-10 gap-4 py-4 lg:px-10 px-2  rounded-lg  shadow-2xl shadow-black " >
-          <div className="flex gap-8 items-center cursor-pointer ">
-            <p className="lg:text-lg text-md font-bold font-raleway">Italy</p>
-            <IoMdArrowDropdown size={24} />
-          </div>
-
-          <div className="flex gap-8 items-center cursor-pointer">
-            <p className="lg:text-lg text-md font-raleway">Select Dates</p>
-            <IoMdArrowDropdown size={24} />
-          </div>
-
-          <div className="flex gap-8 items-center cursor-pointer">
-            <p className="lg:text-lg text-md font-raleway">Guests</p>
-            <IoMdArrowDropdown size={24} />
-          </div>
-
-          <div className="flex gap-8 items-center cursor-pointer">
-            <p className="lg:text-lg text-md font-bold font-raleway">Price</p>
-            <IoMdArrowDropdown size={24} />
-          </div>
-
-          <div className="flex gap-3 bg-lightbrown px-6 py-4 h-12 rounded-lg items-center">
-            <p className="lg:text-lg text-md font-raleway">Search</p>
-            <IoIosSearch size={24} />
-          </div>
+        
+        <div className="bg-white absolute z-30 lg:top-[60%] top-[80%] w-fit left-[50%] -translate-x-[50%] rounded-lg " >
+          <Search/>
         </div>
+
+
         </div>
     </div>
   );
