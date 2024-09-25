@@ -19,7 +19,7 @@ const Contactus = () => {
             </p>
           </div>
 
-<div className="lg:w-3/4 mx-auto h-full ">
+<div className="lg:w-3/4 mx-auto h-full " data-aos="fade-up">
           <div className="flex max-md:flex-col justify-center w-full">
             <div className=" w-1/2  max-md:w-full">
               <Image
@@ -30,7 +30,7 @@ const Contactus = () => {
                 height={800}
               />
             </div>
-            <div className="bg-[#f4f3f1] lg:w-1/2 lg:h-full w-full py-10 lg:px-5">
+            <div className="bg-[#f4f3f1] lg:w-1/2 h-full w-full py-10 lg:px-5">
               <h4 className=" font-bold text-center text-black font-rufina lg:text-4xl text-3xl pb-5 ">
                  Connect with Us
               </h4>

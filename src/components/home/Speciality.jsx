@@ -12,7 +12,7 @@ const Speciality = () => {
           </h2>
         </div>
 
-        <div className="flex lg:justify-evenly max-md:w-full gap-10 max-lg:flex-col items-center ">
+        <div className="flex lg:justify-evenly  max-md:w-full gap-10 max-lg:flex-col items-center " data-aos="fade-up">
           {special.map((item, index) => (
             <div key={index} className="flex max-md:w-1/2 lg:flex-col max-md:gap-3 items-center justify-center  font-rufina">
               <Image

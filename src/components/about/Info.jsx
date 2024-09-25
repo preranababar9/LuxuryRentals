@@ -7,7 +7,7 @@ const Info = () => {
     <div className="max-width">
         
      
-    <div className="flex max-md:flex-col items-center gap-x-16 gap-y-10 ">
+    <div className="flex max-md:flex-col items-center gap-x-16 gap-y-10 " data-aos="fade-left">
 
 
        <div className="h-full lg:w-1/2 max-md:w-3/4">

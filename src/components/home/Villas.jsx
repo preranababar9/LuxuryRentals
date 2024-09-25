@@ -27,7 +27,7 @@ const Villas = () => {
         </div>
 
         {/* parent div */}
-        <div className="flex gap-10 items-center ">
+        <div className="flex gap-10 items-center  " data-aos="fade-up">
           {/* 1st div */}
 
           <Swiper

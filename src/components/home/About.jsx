@@ -10,7 +10,7 @@ const About = () => {
             About Us
           </h2>
           
-        <div className="flex max-md:flex-col-reverse items-center  gap-x-20 gap-y-10 ">
+        <div className="flex max-md:flex-col-reverse items-center  gap-x-20 gap-y-10 " data-aos="fade-right">
        
         <div className="font-rufina lg:w-1/2  ">
           

@@ -22,6 +22,7 @@ const Region = () => {
               src="/images/region1.webp"
               alt="Hero image"
               className="w-1/3 max-md:w-3/4 object-cover"
+              data-aos="fade-right"
               width={800}
               height={900}
             />
@@ -30,6 +31,7 @@ const Region = () => {
               src="/images/region2.webp"
               alt="Hero image"
               className="w-1/3  max-md:w-3/4 object-cover"
+              data-aos="fade-left"
               width={800}
               height={900}
             />
