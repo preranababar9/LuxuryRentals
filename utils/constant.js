@@ -5,6 +5,7 @@
           place: "Italy",
           type: "Mountains",
           name: "Villa Makarska",
+          price : "Rs 30k",
           
           list: [
             {
@@ -33,6 +34,7 @@
           place: "Italy",
           type: "Mountains",
           name: "Villa Makarska",
+          price : "Rs 30k",
          
           list: [
             {
@@ -61,7 +63,7 @@
           place: "Italy",
           type: "Mountains",
           name: "Villa Makarska",
-         
+          price : "Rs 30k",
           list: [
             {
               icon: "/icons/guests.svg",
@@ -89,7 +91,7 @@
           place: "Italy",
           type: "Mountains",
           name: "Villa Makarska",
-         
+          price : "Rs 30k",
           list: [
             {
               icon: "/icons/guests.svg",

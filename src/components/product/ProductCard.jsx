@@ -4,7 +4,7 @@ import Image from "next/image";
 const ProductCard = ({ item }) => {
   return (
     <div>
-      <div className=" ">
+      <div className=" relative">
         <Image
           src={item.img}
           alt="Hero image"
@@ -13,6 +13,10 @@ const ProductCard = ({ item }) => {
           width={500}
           height={500}
         />
+      </div>
+
+      <div className="absolute left-5 py-3 px-4 rounded-br-2xl top-10 bg-pink">
+   <p className="font-rufina text-black "> From <span className="font-bold">{item.price}/daily</span></p>
       </div>
 
       <div className="px-10 py-5">

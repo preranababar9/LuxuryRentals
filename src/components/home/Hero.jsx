@@ -15,7 +15,7 @@ const Hero = () => {
       />
       <div className="" >
       <div className="absolute z-30 top-[30%] w-fit left-[50%] text-nowrap -translate-x-[50%]  max-md:top-[60%]  max-md:text-center">
-        <h1 className="xl:text-7xl   lg:text-7xl max-md:text-5xl text-6xl max-sm:text-3xl font-rufina uppercase font-bold  text-center text-white  pb-5" data-aos="fade-up">
+        <h1 className="xl:text-7xl   lg:text-7xl max-md:text-5xl text-6xl max-sm:text-3xl font-rufina uppercase font-bold  text-center text-white  pb-5" >
           be our guest
         </h1>
         <p className=" text-white lg:text-2xl max-md:bg-white max-md:text-lightbrown text-md px-2 mb-20 py-2 text-center uppercase ">
