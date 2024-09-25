@@ -4,8 +4,8 @@ import Image from "next/image";
 const scene = () => {
   return (
     <div className="py-20 bg-[#dbdee3]">
-      <div className="max-width ">
-        <div className="lg:flex max-md:flex-col justify-center" data-aos="fade-left">
+      <div className="max-width overflow-hidden">
+        <div className="lg:flex max-md:flex-col justify-center " data-aos="fade-left">
           <div className="bg-[#181D24] rounded-lg  lg:w-1/3 py-10 lg:px-5 px-2 max-md:mb-6">
             <h4 className=" font-bold text-center text-white font-rufina lg:text-5xl text-3xl pb-5 ">
               Lets Connect
