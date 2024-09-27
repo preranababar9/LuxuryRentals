@@ -6,7 +6,7 @@ const page = () => {
   return (
     <AdminLayout>
         <section className="py-16 text-center">
-                <h1 className="text-2xl font-semibold">Admin Dashboard</h1>
+                <h1 className="text-3xl font-semibold">Admin Dashboard</h1>
                 <p>Please select a section from the sidebar.</p>
 
                 
