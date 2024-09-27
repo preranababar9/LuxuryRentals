@@ -6,6 +6,7 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 import { loginWithFirebase } from "../../../services/users";
 
+
 const Login = () => {
   const[data, setData] = useState({
     email : "",
@@ -23,6 +24,7 @@ const Login = () => {
         toast.success("Login successful!", {
           position: "top-center",
         });
+     
       } else {
         toast.error("Incorrect Credentials!");
       }

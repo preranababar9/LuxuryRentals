@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { addUser, signInWithFirebase } from "../../../services/users"
-import { getAuth } from "firebase/auth";
+
 
 
 
@@ -39,7 +39,7 @@ const Signin = () => {
         position: "top-center",
    
       });
-      <Link href="/allvillas"></Link>
+    
       
     } catch (error) {
       console.log(error);
