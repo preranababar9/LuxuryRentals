@@ -20,7 +20,7 @@ export default function AdminLayout({ children }) {
 
             <div className="flex gap-4  max-md:gap-2 items-center">
             <MdVilla size={20}/>
-              <Link href="" >Villa Details</Link>
+              <Link href="/admin/villadetails" >Villa Details</Link>
             </div>
           </ul>
         </div>  
@@ -29,7 +29,7 @@ export default function AdminLayout({ children }) {
       </div>
       
             {/* Main content */}
-            <div className="w-full bg-white p-3">
+            <div className="w-full h-1/2 bg-white p-3">
               {children}
             </div>
           </div>
