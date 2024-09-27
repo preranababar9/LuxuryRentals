@@ -4,7 +4,7 @@ import Image from "next/image";
 const Region = () => {
   return (
     <section className="py-20 bg-lightbrown rounded-b-*">
-      <div className="max-width">
+      <div className="max-width overflow-hidden">
         <div>
           <div className="font-rufina text-center ">
             <h2 className="text-center lg:text-5xl text-3xl uppercase pb-5">

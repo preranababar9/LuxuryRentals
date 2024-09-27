@@ -18,7 +18,7 @@ const Hero = () => {
         <h1 className="xl:text-7xl   lg:text-7xl max-md:text-5xl text-6xl max-sm:text-3xl font-rufina uppercase font-bold  text-center text-white  pb-5" >
           be our guest
         </h1>
-        <p className=" text-white lg:text-2xl max-md:bg-white max-md:text-lightbrown text-md px-2 mb-20 py-2 text-center uppercase ">
+        <p className=" text-white lg:text-2xl max-md:bg-white max-md:text-lightbrown text-md px-2 mb-10 py-2 text-center uppercase ">
           live like a king in our best houses
         </p>
         </div>

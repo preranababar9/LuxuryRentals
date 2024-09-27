@@ -1,12 +1,54 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { toast } from "react-toastify";
+import { loginWithFirebase } from "../../../services/users";
 
 const Login = () => {
+  const[data, setData] = useState({
+    email : "",
+    password : ""
+  });
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      const userCredential = await loginWithFirebase(data.email, data.password);
+  
+      // Check if login was successful by verifying if a user object exists
+      if (userCredential && userCredential.user) {
+        localStorage.setItem('email', data.email); // Store email, not password, for security reasons
+        toast.success("Login successful!", {
+          position: "top-center",
+        });
+      } else {
+        toast.error("Incorrect Credentials!");
+      }
+    } catch (error) {
+      console.log(error);
+  
+      // Display a more accurate error toast for failed login attempts
+      toast.error("Login failed: " + error.message, {
+        position: "top-center",
+      });
+    }
+  };
+  
+
+  const userData = (e) => {
+    const {name, value} = e.target;
+
+    setData({...data, [name] : value});
+    console.log(data);
+    
+  };
+
   return (
     <section className="pb-20 pt-28">
       <div className="max-width">
-        <form>
+        <form onSubmit={handleLogin}>
           <div className="flex  items-center">
             <div className="w-1/2  mr-36 max-md:hidden">
               <Image
@@ -28,7 +70,7 @@ const Login = () => {
                 placeholder="Your Email Address"
                 className="border-solid border-2 border-offgrey  pr-10 pl-2 mb-4 py-2 rounded-lg  "
                 name="email"
-                // onChange={handleUser}
+                onChange={userData}
                 required
                 autoComplete="off"
               />
@@ -39,7 +81,7 @@ const Login = () => {
                 placeholder="Password"
                 className="border-solid border-2 border-offgrey  pr-10 pl-2 mb-2 py-2  rounded-lg  "
                 name="password"
-                // onChange={handleUser}
+                onChange={userData}
                 required
                 autoComplete="off"
               />
