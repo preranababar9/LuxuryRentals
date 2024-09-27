@@ -52,7 +52,7 @@ const Villaplace = () => {
   
               <button
                 type="submit"
-                className="bg-black text-white px-6 mt-3 py-3"
+                className="bg-black rounded-lg text-white px-6 mt-3 py-3"
               >
                 Submit
               </button>
