@@ -1,4 +1,4 @@
-import Villaplace from '@/components/admin/Villaplace'
+import VillaDetails from '@/components/admin/VillaDetails'
 import React from 'react'
 import AdminLayout from '../Adminlayout'
 
@@ -6,7 +6,7 @@ const page = () => {
   return (
 
     <AdminLayout>
-        <Villaplace/>
+      <VillaDetails/>
         </AdminLayout>
   )
 }

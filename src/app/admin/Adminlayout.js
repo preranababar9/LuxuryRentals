@@ -13,10 +13,10 @@ export default function AdminLayout({ children }) {
         <Link  href="/admin" className="text-2xl max-md:text-lg   lg:text-nowrap text-center font-bold">Admin Dashbroad</Link>
 
           <ul className="flex flex-col gap-10 text-2xl max-md:text-lg   items-start pt-10 font-semibold">
-            <div className="flex gap-4  max-md:gap-2  lg:text-nowrap items-center">
+            {/* <div className="flex gap-4  max-md:gap-2  lg:text-nowrap items-center">
             <FaLocationArrow size={20} />
               <Link href="/admin/villalocation"> Villa Location</Link>
-            </div>
+            </div> */}
 
             <div className="flex gap-4  max-md:gap-2 items-center">
             <MdVilla size={20}/>

@@ -1,12 +1,31 @@
 import React from 'react'
+"use client";
+
+import { useState } from "react";
 
 const Villaplace = () => {
+
+const [data, setData] = useState({
+  country : "",
+  region : ""
+});
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+    
+  } catch (error) {
+    console.log(error);
+    return error;
+  }
+}
+
   return (
         <section className="py-3 ">
         <div className="">
           <div className="">
             <form
-        //       onSubmit={setCategory}
+              onSubmit={handleSubmit}
               className="flex items-center flex-wrap gap-5"
             >
               <div class="w-full max-w-xs p-5 bg-white rounded-lg ">
@@ -17,8 +36,8 @@ const Villaplace = () => {
                   class="text-sm custom-input w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm transition duration-300 ease-in-out transform focus:-translate-y-1 focus:outline-blue-300 hover:shadow-lg hover:border-blue-300 bg-gray-100"
                   placeholder=" Enter Country"
                   type="text"
-                //   value={data.title}
-                //   onChange={(e) => setData({ ...data, title: e.target.value })}
+                  value={data.country}
+                  onChange={(e) => setData({ ...data, country: e.target.value })}
                 />
               </div>
   
@@ -30,8 +49,8 @@ const Villaplace = () => {
                   class="text-sm custom-input w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm transition duration-300 ease-in-out transform focus:-translate-y-1 focus:outline-blue-300 hover:shadow-lg hover:border-blue-300 bg-gray-100"
                   placeholder=" Enter Region"
                   type="text"
-                //   value={data.tag}
-                //   onChange={(e) => setData({ ...data, tag: e.target.value })}
+                  value={data.region}
+                  onChange={(e) => setData({ ...data, region: e.target.value })}
                 />
               </div>
   
