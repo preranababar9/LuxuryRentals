@@ -1,11 +1,13 @@
 "use client";
 import React, { useState } from "react";
-import { toast } from "react-toastify"; // Assuming you're using react-toastify for notifications
+import { toast } from "react-toastify"; 
 import { addVilla } from "../../../services/allvillas";
 import { v4 } from "uuid";
 import { addFile } from "../../../utils/file";
 
 const Villaplace = () => {
+const [loading, setLoading] = useState(false);
+
   const [data, setData] = useState({
     name: "",
     checkinDate: "",
@@ -23,9 +25,18 @@ const Villaplace = () => {
     totalDays: 0, // To calculate total days of stay
   });
 
-  const handleFileChange = (e) => {
+  const handleFileChange = async (e) => {
+    setLoading(true);
     const files = Array.from(e.target.files);
-    setData({ ...data, images: files });
+    const urls = await Promise.all(
+      files.map(async (item, index) => {
+        const response = await addFile(item, `/villas/${v4()}`);
+        return response;
+      })
+    );
+    console.log(urls);
+    setData((prev) => ({...prev, images:urls}) )
+    setLoading(false);
   };
 
   // Calculate total days between check-in and check-out
@@ -44,9 +55,6 @@ const Villaplace = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = await addFile(data.imageUrl, `villaImg/${v4()}`, v4());
-      setData({ ...data, images: url });
-
       const totalDays = calculateTotalDays(data.checkinDate, data.checkoutDate);
       if (totalDays <= 0) {
         toast.error("Check-out date must be after check-in date.");
@@ -62,7 +70,7 @@ const Villaplace = () => {
         checkoutTime: data.checkoutTime,
         country: data.country,
         region: data.region,
-        images: url,
+        images: data.images,
         price: data.price,
         guests: data.guests,
         bedroom: data.bedroom,
@@ -328,8 +336,10 @@ const Villaplace = () => {
 
             {/* Submit Button */}
             <button
+            disabled = {loading}
               type="submit"
-              className="bg-black rounded-lg text-white  px-6 h-12"
+              
+              className={`${loading? "bg-gray-500 cursor-not-allowed " : "bg-black cursor-pointer" } rounded-lg text-white  px-6 h-12`}
             >
               Submit
             </button>
