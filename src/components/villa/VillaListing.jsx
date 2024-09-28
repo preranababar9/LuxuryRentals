@@ -19,7 +19,7 @@ const VillaListing = () => {
    {/* parent div */}
    <div className="flex gap-5 justify-center items-center flex-wrap   " data-aos="fade-up">
         {facility.map((item, index) => (
-          <div key={index} className="rounded-lg lg:w-[30%] bg-white ">
+          <div key={index} className="rounded-lg w-[30%] lg:w-1/2 bg-white ">
             <ProductCard item={item} />
           </div>
         ))}
