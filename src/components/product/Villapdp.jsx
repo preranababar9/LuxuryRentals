@@ -1,9 +1,24 @@
+"use client";
+
 import Link from "next/link";
 import { MdIosShare } from "react-icons/md";
 import React from "react";
 import Image from "next/image";
+import { useParams } from "next/navigation";
+import { useQuery } from "@tanstack/react-query";
+import { getVillaById } from "../../../services/allvillas";
 
 const Villapdp = () => {
+  const id = useParams().id;
+  const { data, isError, isLoading } = useQuery({
+    queryKey: ["villas", id],
+    queryFn: () => getVillaById(id),
+  });
+
+  console.log(data, id);
+  if (isError) return <div>error</div>;
+  if (isLoading) return <div>Loading</div>;
+
   return (
     <section className="pb-20 pt-32 font-rufina bg-lightbrown">
       <div className="max-width">
@@ -23,50 +38,22 @@ const Villapdp = () => {
 
           {/* images */}
           <div className="flex gap-5 mb-10 ">
-            <Image
-              src="/images/villa1.webp"
+            <img
+              src={data.images[0]}
               alt="Villa image"
               width={800}
               height={900}
               className="w-[50%] max-md:w-full"
-            ></Image>
+            ></img>
 
-            <div className="flex flex-col gap-2 max-md:hidden">
-              <div className="flex gap-3">
-                <Image
-                  src="/images/villa2.webp"
+            <div className="flex flex-wrap gap-2 max-md:hidden">
+              {data.images.map((item, index) => (
+                <img key={index}
+                  src={item}
                   alt="Villa image"
-                  width={800}
-                  height={900}
-                  className="w-1/2 h-full"
-                ></Image>
-
-                <Image
-                  src="/images/villa2.webp"
-                  alt="Villa image"
-                  width={800}
-                  height={900}
-                  className="w-1/2 h-full"
-                ></Image>
-              </div>
-
-              <div className="flex gap-3">
-                <Image
-                  src="/images/villa1.webp"
-                  alt="Villa image"
-                  width={800}
-                  height={900}
-                  className="w-1/2 h-full"
-                ></Image>
-
-                <Image
-                  src="/images/villa1.webp"
-                  alt="Villa image"
-                  width={800}
-                  height={900}
-                  className="w-1/2 h-full"
-                ></Image>
-              </div>
+                  className="w-[300px] h-[250px]"
+                />
+              ))}
             </div>
           </div>
 
@@ -77,13 +64,12 @@ const Villapdp = () => {
             <div>
               <div className="mb-5">
                 <h2 className="text-4xl max-md:text-3xl font-bold uppercase">
-                  Soho
+                  {data.name}
                 </h2>
                 <p className="text-lg max-md:text-sm">
                   8 guests / 6 bedrooms / 6 bathrooms / 280 m
                 </p>
               </div>
-
 
               <div>
                 <p>Checkin</p>

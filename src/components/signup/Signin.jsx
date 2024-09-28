@@ -4,13 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { toast } from "react-toastify";
-import { addUser, signInWithFirebase } from "../../../services/users"
-
-
-
+import { addUser, signInWithFirebase } from "../../../services/users";
+import { useRouter } from "next/navigation";
 
 const Signin = () => {
-  
+const router = useRouter();
 
   const [user, setUser] = useState({
     fname: "",
@@ -23,37 +21,31 @@ const Signin = () => {
     const { name, value } = e.target;
     setUser({ ...user, [name]: value });
     console.log(user);
-    
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const isSignined = await signInWithFirebase(
-        user.email,
-        user.password
-      );
+      const isSignined = await signInWithFirebase(user.email, user.password);
       console.log(isSignined);
       const response = await addUser(user);
+      localStorage.setItem('email', user.email); 
       toast.success(" Account Created Successfully! ", {
         position: "top-center",
-   
       });
-    
-      
+      router.push("/");
     } catch (error) {
       console.log(error);
       toast.error("Something went Wrong", {
         position: "bottom-center",
       });
       return error;
-      
     }
   };
   return (
     <section className="pb-20 pt-28">
       <div className="max-width">
-        <form onSubmit = {handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <div className="flex  items-center">
             <div className="w-1/2  mr-36 max-md:hidden">
               <Image

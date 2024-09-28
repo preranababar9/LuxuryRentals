@@ -6,12 +6,17 @@ import { FiMenu } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
 import { useEffect } from "react";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 const Header = () => {
+  const router = useRouter();
+
+  const path = usePathname();
   const [open, setOpen] = useState(false);
 
   const [toggle, setToggle] = useState(false);
 
+  const [user, setUser] = useState("");
   useEffect(() => {
     if (toggle) {
       document.body.style.overflow = "hidden";
@@ -20,10 +25,14 @@ const Header = () => {
     }
   }, [toggle]);
 
+  useEffect(() => {
+    const user = localStorage.getItem("email");
+    setUser(user);
+  }, [path]);
+
   return (
-    
     <div className="flex justify-around h-10vh absolute z-30 w-full items-center  bg-gradient-to-r from-[#476682] to-[#27466a]  py-5 top-0">
-      <div className="z-30" >
+      <div className="z-30">
         <Link
           href="/"
           className="uppercase text-xl tracking-wide font-raleway  text-[#D9D9D9]"
@@ -81,17 +90,33 @@ const Header = () => {
 
       <div className="max-md:hidden flex gap-10">
         {nav.map((item, index) => (
-            <ul key={index} className=" tracking-wide">
+          <ul key={index} className=" tracking-wide">
             <Link
               href={item.href}
               className="text-lg text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white"
             >
-             {item.title}
+              {item.title}
             </Link>
-          
           </ul>
         ))}
-      
+        {user ? (
+          <div
+            className="text-lg text-[#D9D9D9] font-raleway cursor-pointer hover:scale-110 hover:text-white"
+            onClick={() => {
+              localStorage.removeItem("email");
+              router.push("/login");
+            }}
+          >
+            Logout
+          </div>
+        ) : (
+          <Link
+            href={"/login"}
+            className="text-lg text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white"
+          >
+            Login
+          </Link>
+        )}
       </div>
     </div>
   );
@@ -111,9 +136,5 @@ const nav = [
   {
     href: "/contact",
     title: "Contact",
-  },
-  {
-    href: "/signup",
-    title: "Signup/Login",
   },
 ];

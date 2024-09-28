@@ -114,7 +114,7 @@ const [loading, setLoading] = useState(false);
         <div className="">
           <form
             onSubmit={handleSubmit}
-            className=" h-[600px] lg:flex max-md:flex-col items-center flex-wrap gap-2 overflow-hidden"
+            className=" h-full lg:flex max-md:flex-col items-center flex-wrap gap-2 overflow-y-scroll"
           >
             {/* Name */}
             <div className="w-full max-w-xs p-3 bg-white rounded-lg">
@@ -132,7 +132,7 @@ const [loading, setLoading] = useState(false);
             </div>
 
             {/* Country */}
-            <div className="w-full max-w-xs p-3 bg-white rounded-lg">
+            <div className="w-full max-w-xs p-3 bg-white rounded-lg">  
               <label className="block text-gray-700 text-sm font-bold mb-2">
                 Country
               </label>

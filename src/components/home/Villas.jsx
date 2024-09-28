@@ -9,8 +9,21 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { facility } from "../../../utils/constant";
 import ProductCard from "../product/ProductCard";
+import { useQuery } from "@tanstack/react-query";
+import { getAllVilla } from "../../../services/allvillas";
 
 const Villas = () => {
+
+  const {data,isError,isLoading} = useQuery({
+    queryKey: ["villas"], 
+
+    queryFn: ()=> getAllVilla()
+  });
+
+  if (isError) return <div>error</div>
+  if (isLoading) return <div>loading</div>
+
+
   return (
     <section className="py-20 bg-[#f4f3f1]">
       <div className="max-width">
@@ -53,7 +66,7 @@ const Villas = () => {
               },
             }}
           >
-            {facility.map((item, index) => (
+            {data.map((item, index) => (
               <SwiperSlide
                 key={index}
                 className="rounded-lg lg:w-1/3 bg-white "

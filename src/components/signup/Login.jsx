@@ -5,9 +5,12 @@ import Link from "next/link";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { loginWithFirebase } from "../../../services/users";
+import { useRouter } from "next/navigation";
 
 
 const Login = () => {
+
+  const router = useRouter();
   const[data, setData] = useState({
     email : "",
     password : ""
@@ -15,15 +18,20 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+
+    
     try {
       const userCredential = await loginWithFirebase(data.email, data.password);
+      console.log(userCredential);
+      
   
       // Check if login was successful by verifying if a user object exists
-      if (userCredential && userCredential.user) {
+      if (userCredential ) {
         localStorage.setItem('email', data.email); // Store email, not password, for security reasons
         toast.success("Login successful!", {
           position: "top-center",
         });
+        router.push("/")
      
       } else {
         toast.error("Incorrect Credentials!");
@@ -43,7 +51,7 @@ const Login = () => {
     const {name, value} = e.target;
 
     setData({...data, [name] : value});
-    console.log(data);
+
     
   };
 
