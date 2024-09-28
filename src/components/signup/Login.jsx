@@ -102,6 +102,16 @@ const Login = () => {
               >
                 Login
               </button>
+
+              <p className="text-md text-center">
+                Did'nt have account? Signup here{" "}
+                <Link
+                  href="signup"
+                  className="font-bold underline underline-offset-4"
+                >
+                  Signup here
+                </Link>
+              </p>
             </div>
           </div>
         </form>

@@ -4,14 +4,14 @@ import Link from "next/link";
 import { MdVilla } from "react-icons/md";
 import { FaLocationArrow } from "react-icons/fa";
 import { useEffect } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 export default function AdminLayout({ children }) {
 const router = useRouter();
   useEffect(() => {
    const user =  localStorage.getItem("email");
-   if (user) {
-
+   if (user !== "admin@gmail.com") {
+    router.push("/")
    }
   },[])
         return (
