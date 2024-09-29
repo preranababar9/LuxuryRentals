@@ -87,7 +87,7 @@ const Header = () => {
           ))}
            {user ? (
           <div
-            className="text-lg text-[#D9D9D9] font-raleway cursor-pointer hover:scale-110 hover:text-white"
+            className="text-2xl text-[#D9D9D9] text-center  font-raleway cursor-pointer hover:scale-110 hover:text-white"
             onClick={() => {
               localStorage.removeItem("email");
               router.push("/login");
