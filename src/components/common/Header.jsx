@@ -85,6 +85,24 @@ const Header = () => {
               </Link>
             </ul>
           ))}
+           {user ? (
+          <div
+            className="text-lg text-[#D9D9D9] font-raleway cursor-pointer hover:scale-110 hover:text-white"
+            onClick={() => {
+              localStorage.removeItem("email");
+              router.push("/login");
+            }}
+          >
+            Logout
+          </div>
+        ) : (
+          <Link
+            href={"/login"}
+            className="text-lg text-[#D9D9D9] font-raleway hover:scale-110 hover:text-white"
+          >
+            Login
+          </Link>
+        )}
         </div>
       )}
 
