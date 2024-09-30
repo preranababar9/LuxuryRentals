@@ -48,7 +48,8 @@ const Villapdp = () => {
 
             <div className="flex flex-wrap gap-2 max-md:hidden">
               {data.images.map((item, index) => (
-                <img key={index}
+                <img
+                  key={index}
                   src={item}
                   alt="Villa image"
                   className="w-[300px] h-[250px]"
@@ -67,67 +68,66 @@ const Villapdp = () => {
                   {data.name}
                 </h2>
                 <p className="text-lg max-md:text-sm text-nowrap">
-                  {data.guests} guests / {data.bedroom} bedrooms / {data.bathroom} bathrooms / {data.area} m
+                  {data.guests} guests / {data.bedroom} bedrooms /{" "}
+                  {data.bathroom} bathrooms / {data.area} m
                 </p>
               </div>
 
-<div className="flex gap-5">
-              <div>
-                <p className="font-bold text-xl max-md:text-md">Checkin</p>
-                <p className="">From {data.checkinTime} </p>
-              </div>
+              <div className="flex gap-5">
+                <div>
+                  <p className="font-bold text-xl max-md:text-md">Checkin</p>
+                  <p className="">From {data.checkinTime} </p>
+                </div>
 
-              <div>
-                <p className="font-bold text-xl max-md:text-md">Checkout</p>
-                <p>Until {data.checkoutTime} </p>
+                <div>
+                  <p className="font-bold text-xl max-md:text-md">Checkout</p>
+                  <p>Until {data.checkoutTime} </p>
+                </div>
               </div>
-              </div>
-
 
               <div>
                 <p>Amentities</p>
                 <div>
                   <img src="" alt="" />
-
                 </div>
               </div>
             </div>
 
             {/* contact card */}
             <div className="w-1/3 max-md:w-full text-white ">
-              <div className="bg-black rounded-lg flex flex-col items-start  h-full w-full py-10 lg:px-5">
+              <div className="bg-black rounded-lg flex flex-col gap-y-2 items-center  h-full w-full py-10 max-xl:px-4 lg:px-16 px-5 max-md:px-4 ">
                 <h4 className=" font-bold text-center  text-white font-rufina lg:text-4xl text-3xl pb-5 ">
                   Contact
                 </h4>
 
-                <div className="flex justify-start lg:px-12 px-5 gap-5  pb-3">
-                  <p className="text-lg font-rufina font-bold text-white">
-                    Phone
+                <div className="flex justify-start items-start gap-1">
+                  <p className="lg:text-lg font-rufina font-bold text-white">
+                    Phone:
                   </p>
-                  <p className="text-lg font-rufina  text-white">+386725612</p>
+                  <p className="lg:text-lg font-rufina  text-white">+386725612</p>
                 </div>
 
-                <div className="flex justify-start lg:px-12 px-5 gap-5 pb-3">
-                  <p className="text-lg font-rufina font-bold text-white">
-                    Email
+                <div className=" flex justify-start gap-1">
+                  <p className="lg:text-lg font-rufina font-bold text-white">
+                    Email:
                   </p>
-                  <p className="text-lg font-rufina  text-white">
+                  <p className="lg:text-lg font-rufina  text-white">
                     rentals@gmail.com
                   </p>
                 </div>
 
-                <div className="flex justify-start lg:px-12 px-5 gap-5 ">
-                  <p className="text-lg font-rufina font-bold text-white">
-                   Website
+                <div className=" flex justify-start gap-1 mb-5 ">
+                  <p className="lg:text-lg font-rufina font-bold text-white">
+                    Visit:
                   </p>
-                  <p className="text-lg font-rufina lg:text-nowrap text-white">
+                  <p className="lg:text-lg font-rufina text-nowrap  md:text-wrap text-white">
                     <a>https://rental-villas.vercel.app/</a>
                   </p>
                 </div>
 
-                <p>Prefered Language : English</p>
+                <p className="mb-6">Prefered Language : English</p>
 
-               
+                <button className="bg-pink py-4 px-16 text-center hover:scale-105 text-black max-md:px-10 rounded-lg">Get an offer</button>
               </div>
             </div>
           </div>
