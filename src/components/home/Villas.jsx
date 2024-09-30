@@ -21,7 +21,7 @@ const Villas = () => {
   });
 
   if (isError) return <div>error</div>
-  if (isLoading) return <div>loading</div>
+  if (isLoading) return <div className="text-center">Content is loading. Please wait.</div>
 
 
   return (

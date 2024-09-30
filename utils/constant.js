@@ -1,117 +1,20 @@
- import { MdOutlineSupervisorAccount } from "react-icons/md";
- export const facility = [
-        {
-          img: "/images/villa1.webp",
-          place: "Italy",
-          type: "Mountains",
-          name: "Villa Makarska",
-          price : "Rs 30k",
-          
-          list: [
-            {
-              icon: "/icons/guests.svg",
-          sub: "8 Guests",
-            },
-            {
-                icon: "/icons/bed.svg",
-            sub: "8 Bedrooms",
-              },
-              {
-                icon: "/icons/area.svg",
-            sub: "460 m",
-              },
-              {
-                icon: "/icons/bath.svg",
-            sub: "4 Bathrooms",
-              },
-              
-              
 
-          ]
-        },
+ export const amenities = [
         {
-          img: "/images/villa2.webp",
-          place: "Italy",
-          type: "Mountains",
-          name: "Villa Makarska",
-          price : "Rs 30k",
+          img: "/icons/swim.svg",
+          sub : "Swimming pool"
          
-          list: [
-            {
-              icon: "/icons/guests.svg",
-          sub: "8 Guests",
-            },
-            {
-                icon: "/icons/bed.svg",
-            sub: "8 Bedrooms",
-              },
-              {
-                icon: "/icons/area.svg",
-            sub: "460 m",
-              },
-              {
-                icon: "/icons/bath.svg",
-            sub: "4 Bathrooms",
-              },
-              
-              
-
-          ]
-        },
-        {
-          img: "/images/villa1.webp",
-          place: "Italy",
-          type: "Mountains",
-          name: "Villa Makarska",
-          price : "Rs 30k",
-          list: [
-            {
-              icon: "/icons/guests.svg",
-          sub: "8 Guests",
-            },
-            {
-                icon: "/icons/bed.svg",
-            sub: "8 Bedrooms",
-              },
-              {
-                icon: "/icons/area.svg",
-            sub: "460 m",
-              },
-              {
-                icon: "/icons/bath.svg",
-            sub: "4 Bathrooms",
-              },
-              
-              
-
-          ]
         },
         {
           img: "/images/villa2.webp",
-          place: "Italy",
-          type: "Mountains",
-          name: "Villa Makarska",
-          price : "Rs 30k",
-          list: [
-            {
-              icon: "/icons/guests.svg",
-          sub: "8 Guests",
-            },
-            {
-                icon: "/icons/bed.svg",
-            sub: "8 Bedrooms",
-              },
-              {
-                icon: "/icons/area.svg",
-            sub: "460 m",
-              },
-              {
-                icon: "/icons/bath.svg",
-            sub: "4 Bathrooms",
-              },
-              
-              
-
-          ]
+         
+        },
+        {
+          img: "/images/villa1.webp",
+        
+        },
+        {
+          img: "/images/villa2.webp",
+        
         },
       ];
