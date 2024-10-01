@@ -26,8 +26,10 @@ const Search = () => {
             <IoMdArrowDropdown size={24} />
           </div>
 
-          <div className="flex gap-3 bg-lightbrown px-6 py-4 h-12 rounded-lg items-center">
-            <p className="lg:text-lg text-md font-raleway">Search</p>
+          <div className="flex gap-3 w-full bg-lightbrown px-6 py-4 h-12 rounded-lg items-center">
+            <input
+            placeholder="Search"
+             className="lg:text-lg text-md font-raleway outline-none text-white placeholder-white w-[80px] max-lg:w-[60px] bg-lightbrown" />
             <IoIosSearch size={24} />
           </div>
 

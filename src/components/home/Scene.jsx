@@ -50,7 +50,7 @@ const scene = () => {
                 name=""
                 id=""
                 placeholder="Your name"
-                className="w-full border-b-2 mr-7 mb-5 border-black font-rufina "
+                className="w-full border-b-2 mr-7 mb-5 border-black font-rufina outline-none"
               />
 
               <input
@@ -58,7 +58,7 @@ const scene = () => {
                 name=""
                 id=""
                 placeholder="Your Email"
-                className="w-full mb-5 border-b-2 border-black font-rufina "
+                className="w-full mb-5 border-b-2 border-black font-rufina outline-none"
               />
 
               <input
@@ -66,7 +66,7 @@ const scene = () => {
                 name=""
                 id=""
                 placeholder="Message"
-                className="w-full border-b-2 border-black font-rufina "
+                className="w-full border-b-2 border-black font-rufina outline-none"
               />
             </form>
 
@@ -74,7 +74,7 @@ const scene = () => {
               I accept the terms and conditions
             </p>
 
-            <button className="bg-primary1 lg:w-1/4 w-full text-white px-8 text-lg font-rufina py-2 rounded-lg mt-5">
+            <button className="bg-primary1 lg:w-1/4 w-full text-white px-8 text-lg font-rufina py-2 rounded-lg mt-5 hover:scale-110 duration-300">
               Send
             </button>
           </div>
