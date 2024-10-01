@@ -177,7 +177,7 @@ const Villapdp = () => {
 
                 <p className="mb-6">Prefered Language : English</p>
 
-                <button className="bg-pink py-4 px-16 text-center hover:scale-105 text-black max-md:px-10 rounded-lg">
+                <button className="bg-pink py-4 px-16 text-center hover:scale-105 duration-300 text-black max-md:px-10 rounded-lg">
                   Get an offer
                 </button>
               </div>
