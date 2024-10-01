@@ -14,7 +14,7 @@ const Hero = () => {
       height={800}
       />
       <div className="" >
-      <div className="absolute z-30 top-[30%] w-fit left-[50%] text-nowrap -translate-x-[50%]  max-md:top-[60%]  max-md:text-center">
+      <div className="absolute z-30 top-[30%] w-fit left-[50%] text-nowrap -translate-x-[50%]  max-md:top-[40%]  max-md:text-center">
         <h1 className="xl:text-7xl   lg:text-7xl max-md:text-5xl text-6xl max-sm:text-3xl font-rufina uppercase font-bold  text-center text-white  pb-5" >
           be our guest
         </h1>
@@ -23,7 +23,7 @@ const Hero = () => {
         </p>
         </div>
         
-        <div className="bg-white absolute z-30 lg:top-[60%] top-[80%] w-fit left-[50%] -translate-x-[50%] rounded-lg " >
+        <div className="bg-white absolute z-30 max-lg:top-[60%] max-md:top-[58%] top-[60%] w-fit left-[50%] -translate-x-[50%] rounded-lg " >
           <Search/>
         </div>
 
