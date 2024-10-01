@@ -7,6 +7,7 @@ import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
 import { getVillaById } from "../../../services/allvillas";
+import { amenities, distance } from "../../../utils/constant";
 
 const Villapdp = () => {
   const id = useParams().id;
@@ -15,7 +16,7 @@ const Villapdp = () => {
     queryFn: () => getVillaById(id),
   });
 
-  console.log(data, id);
+  // console.log(data, id);
   if (isError) return <div>error</div>;
   if (isLoading) return <div>Loading</div>;
 
@@ -73,7 +74,7 @@ const Villapdp = () => {
                 </p>
               </div>
 
-              <div className="flex gap-5">
+              <div className="flex gap-5 mb-5">
                 <div>
                   <p className="font-bold text-xl max-md:text-md">Checkin</p>
                   <p className="">From {data.checkinTime} </p>
@@ -86,10 +87,38 @@ const Villapdp = () => {
               </div>
 
               <div>
-                <p>Amentities</p>
-                <div>
-                  <img src="" alt="" />
+                <p className="font-bold text-2xl max-md:text-md max-md:text-md mb-4">
+                  Amentities
+                </p>
+
+                <div className="grid grid-cols-3 max-md:grid-cols-2 gap-x-20 gap-y-2 max-md:gap-x-12 mb-6">
+                  {amenities.map((item, index) => (
+                    <div
+                      key={index}
+                      className="flex gap-2 text-lg max-md:text-md text-nowrap"
+                    >
+                      <img src={item.img} alt="" className="h-5" />
+                      <p>{item.sub}</p>
+                    </div>
+                  ))}
                 </div>
+
+                <div>
+                  <p className="font-bold text-2xl max-md:text-md max-md:text-md mb-4">Distances</p>
+
+                  <div className="grid grid-cols-3 max-md:grid-cols-2 gap-x-20 gap-y-2 max-md:gap-x-12 mb-6">
+                  {distance.map((item, index) => (
+                    <div  key={index}
+                    className="flex gap-2 text-lg max-md:text-md text-nowrap">
+                        <img src={item.icon} alt="" className="h-5" />
+                        <p>{item.sub}</p>
+                    </div>
+
+                  ))}
+                  </div>
+                </div>
+
+
               </div>
             </div>
 
@@ -104,7 +133,9 @@ const Villapdp = () => {
                   <p className="lg:text-lg font-rufina font-bold text-white">
                     Phone:
                   </p>
-                  <p className="lg:text-lg font-rufina  text-white">+386725612</p>
+                  <p className="lg:text-lg font-rufina  text-white">
+                    +386725612
+                  </p>
                 </div>
 
                 <div className=" flex justify-start gap-1">
@@ -127,7 +158,9 @@ const Villapdp = () => {
 
                 <p className="mb-6">Prefered Language : English</p>
 
-                <button className="bg-pink py-4 px-16 text-center hover:scale-105 text-black max-md:px-10 rounded-lg">Get an offer</button>
+                <button className="bg-pink py-4 px-16 text-center hover:scale-105 text-black max-md:px-10 rounded-lg">
+                  Get an offer
+                </button>
               </div>
             </div>
           </div>
