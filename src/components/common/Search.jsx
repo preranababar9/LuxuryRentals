@@ -35,9 +35,13 @@ const Search = () => {
          
     </div>
 
-    <div className="lg:hidden md:hidden px-4 py-4 rounded-s-lg flex gap-10 justify-between shadow-2xl shadow-black  font-rufina max-sm:w-[250px] w-[500px]">
-        <p className="text-xl text-start text-primary1">Where to??</p>
-        <IoIosSearch size={24} />
+    <div className="lg:hidden md:hidden px-4 py-4 rounded-s-lg flex gap-8 justify-between shadow-2xl shadow-black  font-rufina max-sm:w-[250px] w-[500px]">
+
+        <input
+        placeholder="Where to??"
+        name="text"
+        className="text-xl text-start text-primary1 w-full outline-none" />
+        <IoIosSearch size={30}  />
     </div>
 
     </div>
