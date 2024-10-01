@@ -1,4 +1,5 @@
 import Villapdp from '@/components/product/Villapdp'
+import Scene from '@/components/home/Scene'
 import React from 'react'
 
 const page = () => {
@@ -6,6 +7,7 @@ const page = () => {
 
     <div>
       <Villapdp/>
+      <Scene/>
     </div>
   )
 }

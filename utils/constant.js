@@ -53,7 +53,7 @@ export const amenities = [
   },
   {
     img: "/icons/towel.svg",
-    sub: "Towels provided",
+    sub: "Towels",
   },
   {
     img: "/icons/soaps.svg",
@@ -61,7 +61,7 @@ export const amenities = [
   },
   {
     img: "/icons/ac.svg",
-    sub: "Air Conditioner",
+    sub: "AirConditioner",
   },
   {
     img: "/icons/hot.svg",
@@ -103,8 +103,29 @@ export const distance = [
 
 export const dining = [
   {
-    
-  }
+    icon : "/icons/plate.svg",
+    sub : "Plates"
+  },
+  {
+    icon : "/icons/utensils.svg",
+    sub : "Utensils"
+  },
+  {
+    icon : "/icons/coffee.svg",
+    sub : "Coffee Machine"
+  },
+  {
+    icon : "/icons/dishwasher.svg",
+    sub : "Dishwasher"
+  },
+  {
+    icon : "/icons/fridge.svg",
+    sub : "Refrigerator"
+  },
+  {
+    icon : "/icons/oven.svg",
+    sub : "Oven"
+  },
 ]
 
 
